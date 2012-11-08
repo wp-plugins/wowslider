@@ -164,17 +164,22 @@ function wowslider_add_new(){
     </ul><br class="clear" />
     <? if ($tab == 'upload'): ?>
     <h4><?php _e('Add a slider in .zip format', 'wowslider') ?></h4>
-	<p class="install-help"><?php echo str_replace('WOW Slider', 'WOW Slider', __('Create a slider with WOW Slider app first and then upload it here.', 'wowslider')) ?></p>
+	<p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/wordpress-jquery-slider.html" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider first and then upload it here. <br/>Please see full tutorial+video here: <a href="http://wowslider.com/wordpress-jquery-slider.html" target="_blank">http://wowslider.com/wordpress-jquery-slider.html</a>', 'wowslider')) ?></p>
 	<form method="post" enctype="multipart/form-data" action="<?php echo self_admin_url('admin.php?page=wowslider-add-new&noheader=1') ?>">
 		<?php wp_nonce_field('wowslider-add-new') ?>
 		<label class="screen-reader-text" for="sliderzip"><?php _e('Slider zip file', 'wowslider'); ?></label>
 		<input type="file" id="sliderzip" name="sliderzip" />
 		<input type="submit" class="button" value="<?php esc_attr_e('Add Now', 'wowslider') ?>" />
 	</form>
-
+    <p><div class="video"><object width="532" height="325">
+        <param name="movie" value="http://www.youtube.com/v/o82IuhWtgTo?fs=1" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowscriptaccess" value="never" />
+        <embed src="http://www.youtube.com/v/o82IuhWtgTo?fs=1" type="application/x-shockwave-flash" allowscriptaccess="never" allowfullscreen="true" width="532" height="325" />
+    </object></div></p>
     <? else: ?>
     <h4><?php _e('Add a slider in .zip format from folder', 'wowslider') ?></h4>
-    <p class="install-help"><?php echo str_replace('WOW Slider', 'WOW Slider', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/plugins/wowslider-wp/import/".</p>
+    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/plugins/wowslider-wp/import/".</p>    
     <br />
     <form method="post" action="<?php echo self_admin_url('admin.php?page=wowslider-add-new&tab=import&noheader=1') ?>">
 		<?php wp_nonce_field('wowslider-add-new') ?>

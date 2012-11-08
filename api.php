@@ -118,7 +118,7 @@ function wowslider_import($zip_file = false, $update = 0, $delete = true){
     $path .= md5(microtime()) . '/';
     $wp_filesystem -> mkdir($path);
     $unzip = unzip_file($zip_file, $path);
-    $install = $path . 'wowslider-wp/install/';
+    $install = $path . 'wowslider/install/';
     if ($delete) $wp_filesystem -> delete($zip_file);
     if (is_object($unzip)) $status = __('Wrong .zip file.', 'wowslider');
     else {

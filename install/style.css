@@ -165,11 +165,11 @@
 }
 * html #wowslider-container%ID% .ws_shadow{/*ie6*/
 	background:none;
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='wowslider-wp/install/shadow.png', sizingMethod='scale');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='wowslider/install/shadow.png', sizingMethod='scale');
 }
 *+html #wowslider-container%ID% .ws_shadow{/*ie7*/
 	background:none;
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='wowslider-wp/install/shadow.png', sizingMethod='scale');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='wowslider/install/shadow.png', sizingMethod='scale');
 }
 #wowslider-container%ID% .ws_bullets  a img{
 	text-indent:0;

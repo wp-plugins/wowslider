@@ -336,4 +336,4 @@ jQuery.extend(jQuery.easing, {
     }
 });
 
-jQuery("#wowslider-container%ID%").wowSlider({effect:"rotate",prev:"",next:"",duration:20*100,delay:20*100,width:580,height:212,autoPlay:true,stopOnHover:false,loop:false,bullets:true,caption:true,captionEffect:"slide",controls:true,logo:"wowslider-wp/install/loading.gif",images:0});
+jQuery("#wowslider-container%ID%").wowSlider({effect:"rotate",prev:"",next:"",duration:20*100,delay:20*100,width:580,height:212,autoPlay:true,stopOnHover:false,loop:false,bullets:true,caption:true,captionEffect:"slide",controls:true,logo:"wowslider/install/loading.gif",images:0});

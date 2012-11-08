@@ -97,7 +97,7 @@ class WOWSlider_List_Table extends WP_List_Table {
 			}
             $text .= ' <span class="count">(' . $count . ')</span>';
 			$status_links[$type] = sprintf('<a href="%s" %s>%s</a>',
-                add_query_arg('slider_status', $type, 'admin.php?page=wowslider-wp/admin.php'),
+                add_query_arg('slider_status', $type, 'admin.php?page=wowslider/admin.php'),
                 ($type == $status) ? ' class="current"' : '',
                 sprintf($text, number_format_i18n($count))
             );
@@ -174,13 +174,13 @@ class WOWSlider_List_Table extends WP_List_Table {
 		global $status, $page, $s, $mode;
         if ($data['trash']){
             $actions = array(
-                'untrash' => '<a href="' . wp_nonce_url('admin.php?page=wowslider-wp/admin.php&amp;slider=' . $id .'&amp;action=untrash&amp;slider_status=' . $status . '&amp;paged=' . $page, 'untrash') . '" title="' . esc_attr__('Restore this item from the Trash') . '">' . __('Restore') . '</a>',
-                'delete' => '<a href="' . wp_nonce_url('admin.php?page=wowslider-wp/admin.php&amp;slider=' . $id .'&amp;action=delete&amp;slider_status=' . $status . '&amp;paged=' . $page, 'delete') . '" title="' . esc_attr__('Delete this item permanently') . '" class="submitdelete">' . __('Delete Permanently') . '</a>'
+                'untrash' => '<a href="' . wp_nonce_url('admin.php?page=wowslider/admin.php&amp;slider=' . $id .'&amp;action=untrash&amp;slider_status=' . $status . '&amp;paged=' . $page, 'untrash') . '" title="' . esc_attr__('Restore this item from the Trash') . '">' . __('Restore') . '</a>',
+                'delete' => '<a href="' . wp_nonce_url('admin.php?page=wowslider/admin.php&amp;slider=' . $id .'&amp;action=delete&amp;slider_status=' . $status . '&amp;paged=' . $page, 'delete') . '" title="' . esc_attr__('Delete this item permanently') . '" class="submitdelete">' . __('Delete Permanently') . '</a>'
             );
         } else {
             $actions = array(
-                'trash' => '<a href="' . wp_nonce_url('admin.php?page=wowslider-wp/admin.php&amp;slider=' . $id .'&amp;action=trash&amp;slider_status=' . $status . '&amp;paged=' . $page, 'trash') . '" title="' . esc_attr__('Move this item to the Trash') . '" class="submitdelete">' . __('Trash') . '</a>',
-                'view' => '<a href="' . admin_url('admin.php?page=wowslider-wp/admin.php&amp;slider=' . $id .'&amp;action=view') . '" title="' . esc_attr__('View this item', 'wowslider') . '" class="view">' . __('View') . '</a>'
+                'trash' => '<a href="' . wp_nonce_url('admin.php?page=wowslider/admin.php&amp;slider=' . $id .'&amp;action=trash&amp;slider_status=' . $status . '&amp;paged=' . $page, 'trash') . '" title="' . esc_attr__('Move this item to the Trash') . '" class="submitdelete">' . __('Trash') . '</a>',
+                'view' => '<a href="' . admin_url('admin.php?page=wowslider/admin.php&amp;slider=' . $id .'&amp;action=view') . '" title="' . esc_attr__('View this item', 'wowslider') . '" class="view">' . __('View') . '</a>'
             );
         }
         echo "<tr id=\"slider-$id\" class=\"" . ($index % 2 ? 'alternate' : '') . "\" valign=\"top\">";
@@ -195,7 +195,7 @@ class WOWSlider_List_Table extends WP_List_Table {
 				case 'name':
 					echo '<td class="column-title"' . $style . '><strong>';
                     if ($status == 'trash') echo htmlspecialchars($data['name']);
-                    else echo '<a href="' . admin_url('admin.php?page=wowslider-wp/admin.php&amp;slider=' . $id .'&amp;action=view') . '" title="' . __('View') . ' ' . esc_attr('"' . $data['name'] . '"') . '">' . htmlspecialchars($data['name']) . '</a>';
+                    else echo '<a href="' . admin_url('admin.php?page=wowslider/admin.php&amp;slider=' . $id .'&amp;action=view') . '" title="' . __('View') . ' ' . esc_attr('"' . $data['name'] . '"') . '">' . htmlspecialchars($data['name']) . '</a>';
 					echo '</strong>' . $this -> row_actions($actions);
 					echo '</td>';
 					break;
@@ -204,7 +204,7 @@ class WOWSlider_List_Table extends WP_List_Table {
 					break;
                 case 'author':
 					echo '<td class="column-author"' . $style . '>';
-                    if ($data['author']) echo '<a href="' . admin_url('admin.php?page=wowslider-wp/admin.php&author=' . $data['author']['id']) . '">' . htmlspecialchars($data['author']['name']) . '</a>';
+                    if ($data['author']) echo '<a href="' . admin_url('admin.php?page=wowslider/admin.php&author=' . $data['author']['id']) . '">' . htmlspecialchars($data['author']['name']) . '</a>';
                     else echo '&nbsp;';
                     echo '</td>';
 					break;

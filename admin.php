@@ -11,7 +11,7 @@ function wowslider_admin_menu(){
 
 function wowslider_help($contextual_help, $screen_id, $screen){
     $page = isset($_GET['page']) ? $_GET['page'] : '';
-    if ($screen -> parent_file == 'wowslider-wp/admin.php'){
+    if ($screen -> parent_file == 'wowslider/admin.php'){
         return sprintf(__('<p>For more information, read help on %s</p>', 'wowslider'), '<a href="http://wowslider.com/wordpress-jquery-slider.html" target="_blank">wowslider.com</a>');
     }
     return $contextual_help;
@@ -51,7 +51,7 @@ var tinymce_wowslider = ' . json_encode($wowslider) . ';
 
 function wowslider_set_screen_id(){
     $screen = get_current_screen();
-    if ('toplevel_page_wowslider-wp/admin' == $screen -> id)
+    if ('toplevel_page_wowslider/admin' == $screen -> id)
         set_current_screen('wowslider_sliders');
 }
 
@@ -88,7 +88,7 @@ function wowslider_sliders(){
             echo '<div id="message" class="updated"><p>';
             $trashed = count($ids);
             printf(_n('Item moved to the Trash.', '%s items moved to the Trash.', $trashed), number_format_i18n($trashed));
-            echo ' <a href="' . wp_nonce_url('admin.php?page=wowslider-wp/admin.php&amp;slider=' . implode(',', $ids) .'&amp;action=untrash&amp;slider_status=' . $status . '&amp;paged=' . $page, 'untrash') . '" title="' . esc_attr__('Restore this item from the Trash') . '">' . __('Undo') . '</a><br />';
+            echo ' <a href="' . wp_nonce_url('admin.php?page=wowslider/admin.php&amp;slider=' . implode(',', $ids) .'&amp;action=untrash&amp;slider_status=' . $status . '&amp;paged=' . $page, 'untrash') . '" title="' . esc_attr__('Restore this item from the Trash') . '">' . __('Undo') . '</a><br />';
             echo '</p></div>';
         } else if ($_REQUEST['action'] == 'untrash' && ($ids = wowslider_delete($ids, 'restore'))){
             echo '<div id="message" class="updated"><p>';
@@ -110,7 +110,7 @@ function wowslider_sliders(){
     <?php $wp_list_table -> views(); ?>
     <form method="get" action="">
     <?php $wp_list_table -> search_box(__('Search Sliders', 'wowslider'), 'slider'); ?>
-    <input type="hidden" name="page" value="wowslider-wp/admin.php" />
+    <input type="hidden" name="page" value="wowslider/admin.php" />
     <input type="hidden" name="paged" value="<?php echo esc_attr($page) ?>" />
     <input type="hidden" name="slider_status" value="<?php echo esc_attr($status) ?>" />
     <?php $wp_list_table -> display(); ?>
@@ -179,7 +179,7 @@ function wowslider_add_new(){
     </object></div></p>
     <? else: ?>
     <h4><?php _e('Add a slider in .zip format from folder', 'wowslider') ?></h4>
-    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/plugins/wowslider-wp/import/".</p>    
+    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/plugins/wowslider/import/".</p>    
     <br />
     <form method="post" action="<?php echo self_admin_url('admin.php?page=wowslider-add-new&tab=import&noheader=1') ?>">
 		<?php wp_nonce_field('wowslider-add-new') ?>
@@ -192,7 +192,7 @@ function wowslider_add_new(){
 
 function wowslider_add_new_from_plugins($source){
     global $wp_filesystem;
-    if (substr($source, -41) == 'wowslider-wp/'){
+    if (substr($source, -41) == 'wowslider/'){
         $message = $location = '';
         $uploads = wp_upload_dir();
         $file = $uploads['basedir'] . '/' . basename(substr($source, 0, -41)) . '.zip';
@@ -204,7 +204,7 @@ function wowslider_add_new_from_plugins($source){
             $message = '<div id="message" class="error"><p>' . htmlspecialchars($status) . '</p></div>';
         } else {
             $location = admin_url('admin.php?page=wowslider-add-new&message=&slider=' . wowslider_add());
-            $message = '<div id="message" class="updated"><p>' . __('Slider added! To add it on the page use the shortcode:', 'wowslider') . ' <strong><code>[wowslider id="' . wowslider_add() . '"]</code></strong>. ' . str_replace('all sliders', '<a href="' . admin_url('admin.php?page=wowslider-wp/admin.php') . '">all sliders</a>', __('See all sliders.', 'wowslider')) . '</p></div>';
+            $message = '<div id="message" class="updated"><p>' . __('Slider added! To add it on the page use the shortcode:', 'wowslider') . ' <strong><code>[wowslider id="' . wowslider_add() . '"]</code></strong>. ' . str_replace('all sliders', '<a href="' . admin_url('admin.php?page=wowslider/admin.php') . '">all sliders</a>', __('See all sliders.', 'wowslider')) . '</p></div>';
         }
         if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
         foreach (array('', 'data/') as $dir){
@@ -257,7 +257,7 @@ add_action('init', 'wowslider_tinymce_button');
 add_action('admin_menu', 'wowslider_admin_menu');
 add_filter('contextual_help', 'wowslider_help', 10, 3);
 add_filter('in_admin_header', 'wowslider_table_include');
-add_filter('load-toplevel_page_wowslider-wp/admin', 'wowslider_set_screen_id');
+add_filter('load-toplevel_page_wowslider/admin', 'wowslider_set_screen_id');
 add_filter('upgrader_source_selection', 'wowslider_add_new_from_plugins');
 wp_register_style('wowslider-admin', WOWSLIDER_PLUGIN_URL . 'data/admin.css');
 wp_enqueue_style('wowslider-admin');

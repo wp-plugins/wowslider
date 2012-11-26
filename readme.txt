@@ -20,6 +20,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 *    [Prime Time - Filmstrip](http://wowslider.com/jquery-image-scroller-prime-time-linear-demo.html "jQuery Image Scroller - Prime Time Template Demo with Basic linear effect")
 *    [Responsive Slider - Shady Stack](view-source:http://wowslider.com/wordpress-gallery-css-shady-stack-v-demo.html "Responsive Slider - Wordpress Shady Stack Demo")
+*    [Catalyst Digital Demo](http://www.wowslider.com/jquery-picture-slider-catalyst-digital-stack-demo.html "jQuery Picture Slider - Catalyst Digital Template Demo with Stack effect")
 *    [Dark Matter Demo](http://www.wowslider.com/free-image-slider-dark-matter-squares-demo.html "Free image slider - Dark Matter Demo with Squares effect")
 *    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Slider - Terse Blur")
 

@@ -1,7 +1,7 @@
 === WOW Slider ===
 Contributors: WOWSlider.com
 Donate link: http://wowslider.com/
-Tags: banner, css,  gallery,  image, image gallery, image slider, images, intro, javascript, jquery, jquery slider, photo, photo gallery, photo slider, photos, picture, pictures, plugin, Post, responsive slider, rotator, shortcode, slider, slideshow, widget, wordpress, wordpress slider, wordpress gallery, wow slider, wowslider
+Tags: banner, gallery, image, image slider, images, javascript, jquery, photo, css, photos, picture, pictures, plugin, post, responsive slider, shortcode, posts, slider, slideshow, widget, wordpress, wordpress slider, wow slider, page, links
 Requires at least: 3.1
 Tested up to: 3.4
 Stable tag: trunk

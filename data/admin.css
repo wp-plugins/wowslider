@@ -5,6 +5,9 @@
     opacity: 1;
     filter: alpha(opacity=100);
 }
+body.wp-gte-3-5 #toplevel_page_wowslider-admin .wp-menu-image img {
+    background-position: 6px 6px;
+}
 body.admin-color-classic #toplevel_page_wowslider-admin .wp-menu-image img {
     background-position: 1px -29px;
 }
@@ -13,6 +16,13 @@ body.admin-color-classic #toplevel_page_wowslider-admin.wp-has-current-submenu .
 body.admin-color-classic #toplevel_page_wowslider-admin:hover .wp-menu-image img,
 #toplevel_page_wowslider-admin:hover .wp-menu-image img {
     background-position: 1px -63px;
+}
+body.wp-gte-3-5.admin-color-classic #toplevel_page_wowslider-admin .wp-menu-image img {
+    background-position: 6px -28px;
+}
+body.wp-gte-3-5 #toplevel_page_wowslider-admin.wp-has-current-submenu .wp-menu-image img,
+body.wp-gte-3-5 #toplevel_page_wowslider-admin:hover .wp-menu-image img {
+    background-position: 6px -62px;
 }
 
 /** icon (header) */

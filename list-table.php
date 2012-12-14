@@ -116,9 +116,10 @@ class WOWSlider_List_Table extends WP_List_Table {
         return $actions;
 	}
 
-	function bulk_actions($which){
+	function bulk_actions($which = false){
 		global $status;
-		parent::bulk_actions($which);
+        if (func_num_args()) parent::bulk_actions($which);
+        else parent::bulk_actions();
 	}
 
 	function extra_tablenav($which){

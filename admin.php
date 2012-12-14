@@ -4,6 +4,11 @@ function wowslider_admin_menu(){
     global $submenu;
     $file = __FILE__;
     $path = plugin_basename($file);
+    add_filter('admin_body_class', create_function('$class', '
+        if ((float)get_bloginfo("version") >= 3.5)
+            $class .= "wp-gte-3-5";
+        return $class;
+    '));
     add_menu_page('WOW Slider', 'WOW Slider', 7, $file, 'wowslider_sliders', WOWSLIDER_PLUGIN_URL . 'data/icon0.gif');
     add_submenu_page($file, __('Add New Slider', 'wowslider'), __('Add New', 'wowslider'), 7, 'wowslider-add-new', 'wowslider_add_new');
     if (isset($submenu[$path][0][0])) $submenu[$path][0][0] = $submenu[$path][0][3] = __('All Sliders', 'wowslider');
@@ -192,10 +197,10 @@ function wowslider_add_new(){
 
 function wowslider_add_new_from_plugins($source){
     global $wp_filesystem;
-    if (substr($source, -41) == 'wowslider/'){
+    if (substr($source, -10) == 'wowslider/'){
         $message = $location = '';
         $uploads = wp_upload_dir();
-        $file = $uploads['basedir'] . '/' . basename(substr($source, 0, -41)) . '.zip';
+        $file = $uploads['path'] . '/' . basename(substr($source, 0, -10)) . '.zip';
         if (!is_dir($source . 'install/')){
             $location = admin_url('admin.php?page=wowslider-add-new&error=1&message=' . urlencode(__('Wrong slider.', 'wowslider')));
             $message = '<div id="message" class="error"><p>' . htmlspecialchars(__('Wrong slider.', 'wowslider')) . '</p></div>';

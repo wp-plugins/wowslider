@@ -3,7 +3,7 @@ Contributors: WOWSlider.com
 Donate link: http://wowslider.com/
 Tags: banner, gallery, image, image slider, images, javascript, jquery, photo, css, photos, picture, pictures, plugin, post, responsive slider, shortcode, posts, slider, slideshow, widget, wordpress, wordpress slider, wow slider, page, links
 Requires at least: 3.1
-Tested up to: 3.4
+Tested up to: 3.5
 Stable tag: trunk
 
 Add beautiful image slider to your Wordpress blog! Awesome effects, fancy templates, point-and-click wizard. Fully responsive, pure CSS fallback.

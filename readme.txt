@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 **Live Demos**:
 
 *    [Prime Time - Filmstrip](http://wowslider.com/jquery-image-scroller-prime-time-linear-demo.html "jQuery Image Scroller - Prime Time Template Demo with Basic linear effect")
+*    [Elemental Slices Demo](view-source:http://wowslider.com/jquery-slider-css-elemental-slices-demo.html "jQuery Slider CSS Elemental Slices Demo") 
 *    [Responsive Slider - Shady Stack](view-source:http://wowslider.com/wordpress-gallery-css-shady-stack-v-demo.html "Responsive Slider - Wordpress Shady Stack Demo")
 *    [Catalyst Demo](http://wowslider.com/jquery-banner-rotator-catalyst-fade-demo.html "Jquery banner rotator - Catalyst Template Demo with Fade effect") 
 *    [Catalyst Digital Demo](http://www.wowslider.com/jquery-picture-slider-catalyst-digital-stack-demo.html "jQuery Picture Slider - Catalyst Digital Template Demo with Stack effect")

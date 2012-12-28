@@ -13,13 +13,12 @@ function wowslider_upload_dir($k = 'path'){
 }
 
 function wowslider_install($undo = false){
-    global $wp_filesystem, $wpdb;
+    global $wpdb;
     $table = $wpdb -> prefix . 'wowslider';
     if ($undo){
         $wpdb -> query("DROP TABLE $table;");
         require_once(ABSPATH . 'wp-admin/includes/file.php');
-        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
-        $wp_filesystem -> delete(wowslider_upload_dir(), true);
+        WOWSlider_Helpers::filesystem_delete(wowslider_upload_dir(), true);
         delete_metadata('user', 0, 'wowslider_last_view', '', true);
         delete_metadata('user', 0, 'wp_wowslider_sliders_per_page', '', true);
         delete_metadata('user', 0, 'managewowslider_sliderscolumnshidden', '', true);
@@ -49,17 +48,16 @@ function wowslider_install($undo = false){
 }
 
 function wowslider_add($folder = false, $update = 0, $delete = true){
-    global $wp_filesystem, $wpdb, $user_ID;
+    global $wpdb, $user_ID;
     static $id = 0;
     if (!$folder) return $id;
-    if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
-    if ($wp_filesystem -> is_file($folder) && strtolower(substr($folder, -4)) == '.zip')
+    if (is_file($folder) && strtolower(substr($folder, -4)) == '.zip')
         return wowslider_import($folder, $update, $delete);
     $folder = rtrim(str_replace('\\', '/', $folder), '/') . '/';
-    if ($wp_filesystem -> is_file($folder . 'slider.html') &&
-        $wp_filesystem -> is_dir($folder . 'images/')){
+    if (is_file($folder . 'slider.html') &&
+        is_dir($folder . 'images/')){
         $images = array();
-        $list = $wp_filesystem -> dirlist($folder . ($wp_filesystem -> is_dir($folder . 'tooltips/') ? 'tooltips/' : 'images/'));
+        $list = WOWSlider_Helpers::filesystem_dirlist($folder . (is_dir($folder . 'tooltips/') ? 'tooltips/' : 'images/'));
         foreach ($list as $name=>$v){
             if ($v['type'] == 'f' && strtolower(substr($name, -4)) == '.jpg')
                 $images[] = $name;
@@ -83,9 +81,9 @@ function wowslider_add($folder = false, $update = 0, $delete = true){
             $id = $update ? (int)$update : (int)$wpdb -> get_var('SELECT LAST_INSERT_ID();');
             if ($id){
                 $dest = wowslider_upload_dir() . $id . '/';
-                if (!$wp_filesystem -> is_dir(wowslider_upload_dir())) $wp_filesystem -> mkdir(wowslider_upload_dir());
-                if ($wp_filesystem -> is_dir($dest)) $wp_filesystem -> delete($dest, true);
-                $wp_filesystem -> move($folder, $dest);
+                if (!is_dir(wowslider_upload_dir())) mkdir(wowslider_upload_dir());
+                if (is_dir($dest)) WOWSlider_Helpers::filesystem_delete($dest, true);
+                WOWSlider_Helpers::filesystem_move($folder, $dest);
                 if ($name == '') $wpdb -> query('UPDATE ' . $wpdb -> prefix . 'wowslider SET slider_name = "' . $wpdb -> escape('Slider ' . $id) . '" WHERE ID = ' . $id . ';');
                 file_put_contents($dest . 'slider.html', str_replace('%ID%', $id, file_get_contents($dest . 'slider.html')));
                 file_put_contents($dest . 'style.css', str_replace('%ID%', $id, file_get_contents($dest . 'style.css')));
@@ -101,11 +99,12 @@ function wowslider_import($zip_file = false, $update = 0, $delete = true){
     global $wp_filesystem;
     static $file = '';
     if ($zip_file === 'file') return $file;
-    if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
+    define('FS_METHOD', 'direct');
+    WP_Filesystem();
     $path = WOWSLIDER_PLUGIN_PATH . 'import/';
     $status = true;
     if (!$zip_file){
-        $list = $wp_filesystem -> dirlist($path);
+        $list = WOWSlider_Helpers::filesystem_dirlist($path);
         foreach ($list as $name=>$v){
             if ($v['type'] == 'f' && strtolower(substr($name, -4)) == '.zip'){
                 $zip_file = $path . $name;
@@ -116,31 +115,31 @@ function wowslider_import($zip_file = false, $update = 0, $delete = true){
         if (!$zip_file) return __('Files to import not found.', 'wowslider');
     }
     $path .= md5(microtime()) . '/';
-    $wp_filesystem -> mkdir($path);
+    @mkdir($path);
     $unzip = unzip_file($zip_file, $path);
     $install = $path . 'wowslider/install/';
-    if ($delete) $wp_filesystem -> delete($zip_file);
+    if ($delete) WOWSlider_Helpers::filesystem_delete($zip_file);
     if (is_object($unzip)) $status = __('Wrong .zip file.', 'wowslider');
     else {
         $status = wowslider_add((is_dir($install) ? $install : $path . 'import/'), $update);
         $install = substr($install, 0, -8);
-        if (is_dir($install)){
+        if (is_dir($install) && WOWSlider_Helpers::is_new_plugin($install . 'wowslider.php')){
             foreach (array('', 'data/') as $dir){
-                if ($list = $wp_filesystem -> dirlist($install . $dir)){
+                if ($list = WOWSlider_Helpers::filesystem_dirlist($install . $dir)){
                     foreach ($list as $item){
                         if ($item['type'] != 'f') continue;
-                        $wp_filesystem -> copy($install . $dir . $item['name'], WOWSLIDER_PLUGIN_PATH . $dir . $item['name'], true);
+                        WOWSlider_Helpers::filesystem_copy($install . $dir . $item['name'], WOWSLIDER_PLUGIN_PATH . $dir . $item['name'], true);
                     }
                 }
             }
         }
     }
-    $wp_filesystem -> delete($path, true);
+    WOWSlider_Helpers::filesystem_delete($path, true);
     return $status;
 }
 
 function wowslider_delete($id, $type = 'permanently'){
-    global $wp_filesystem, $wpdb;
+    global $wpdb;
     $where = '';
     if ($id !== 'all' && $id !== '*'){
         if (is_string($id)) $id = preg_split('/,\s*/', $id);
@@ -149,11 +148,10 @@ function wowslider_delete($id, $type = 'permanently'){
         $where = ' ID IN (' . implode(',', array_unique($id)) . ') AND';
     }
     if ($type == 'permanently'){
-        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
         if (!$id = $wpdb -> get_results('SELECT ID FROM ' . $wpdb -> prefix . 'wowslider WHERE' . $where . ' slider_public = 0 ORDER BY ID ASC LIMIT 200', ARRAY_A)) return false;
         $indexes = array_map(create_function('$v', 'return (int)$v[\'ID\'];'), $id);
         foreach ($indexes as $id){
-            $wp_filesystem -> delete(wowslider_upload_dir() . $id . '/', true);
+            WOWSlider_Helpers::filesystem_delete(wowslider_upload_dir() . $id . '/', true);
             $wpdb -> query('DELETE FROM ' . $wpdb -> prefix . 'wowslider WHERE ID = ' . $id . ';');
         }
         return $indexes;

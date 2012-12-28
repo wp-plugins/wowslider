@@ -196,7 +196,6 @@ function wowslider_add_new(){
 }
 
 function wowslider_add_new_from_plugins($source){
-    global $wp_filesystem;
     if (substr($source, -10) == 'wowslider/'){
         $message = $location = '';
         $uploads = wp_upload_dir();
@@ -211,12 +210,13 @@ function wowslider_add_new_from_plugins($source){
             $location = admin_url('admin.php?page=wowslider-add-new&message=&slider=' . wowslider_add());
             $message = '<div id="message" class="updated"><p>' . __('Slider added! To add it on the page use the shortcode:', 'wowslider') . ' <strong><code>[wowslider id="' . wowslider_add() . '"]</code></strong>. ' . str_replace('all sliders', '<a href="' . admin_url('admin.php?page=wowslider/admin.php') . '">all sliders</a>', __('See all sliders.', 'wowslider')) . '</p></div>';
         }
-        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
-        foreach (array('', 'data/') as $dir){
-            if ($list = $wp_filesystem -> dirlist($source . $dir)){
-                foreach ($list as $item){
-                    if ($item['type'] != 'f') continue;
-                    $wp_filesystem -> copy($source . $dir . $item['name'], WOWSLIDER_PLUGIN_PATH . $dir . $item['name'], true);
+        if (WOWSlider_Helpers::is_new_plugin($source . 'wowslider.php')){
+            foreach (array('', 'data/') as $dir){
+                if ($list = WOWSlider_Helpers::filesystem_dirlist($source . $dir)){
+                    foreach ($list as $item){
+                        if ($item['type'] != 'f') continue;
+                        WOWSlider_Helpers::filesystem_copy($source . $dir . $item['name'], WOWSLIDER_PLUGIN_PATH . $dir . $item['name'], true);
+                    }
                 }
             }
         }
@@ -243,16 +243,14 @@ function wowslider_add_new_from_plugins($source){
 }
 
 function wowslider_old_version(){
-    global $wp_filesystem;
     $dir = WOWSLIDER_PLUGIN_PATH . 'sliders/';
     if (is_dir($dir)){
         require_once(ABSPATH . 'wp-admin/includes/file.php');
-        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
-        if ($list = $wp_filesystem -> dirlist($dir)){
+        if ($list = WOWSlider_Helpers::filesystem_dirlist($dir)){
             foreach ($list as $item)
-                $wp_filesystem -> move($source . $dir . $item['name'], wowslider_upload_dir() . $item['name']);
+                WOWSlider_Helpers::filesystem_move($source . $dir . $item['name'], wowslider_upload_dir() . $item['name']);
         }
-        $wp_filesystem -> delete($dir, true);
+        WOWSlider_Helpers::filesystem_delete($dir, true);
     }
 }
 

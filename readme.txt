@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Silence Demo with Blur effect](html-slideshow-silence-blur-demo.html "HTML slideshow - Silence Template Demo with Blur effect")
 *    [Prime Time - Filmstrip](http://wowslider.com/jquery-image-scroller-prime-time-linear-demo.html "jQuery Image Scroller - Prime Time Template Demo with Basic linear effect")
 *    [Elemental Slices Demo](view-source:http://wowslider.com/jquery-slider-css-elemental-slices-demo.html "jQuery Slider CSS Elemental Slices Demo") 
 *    [Responsive Slider - Shady Stack](view-source:http://wowslider.com/wordpress-gallery-css-shady-stack-v-demo.html "Responsive Slider - Wordpress Shady Stack Demo")

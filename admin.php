@@ -184,7 +184,7 @@ function wowslider_add_new(){
     </object></div></p>
     <? else: ?>
     <h4><?php _e('Add a slider in .zip format from folder', 'wowslider') ?></h4>
-    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/plugins/wowslider/import/".</p>    
+    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/uploads/wow-slider-plugin/import/".</p>    
     <br />
     <form method="post" action="<?php echo self_admin_url('admin.php?page=wowslider-add-new&tab=import&noheader=1') ?>">
 		<?php wp_nonce_field('wowslider-add-new') ?>
@@ -196,10 +196,14 @@ function wowslider_add_new(){
 }
 
 function wowslider_add_new_from_plugins($source){
+    global $wp_filesystem;
     if (substr($source, -10) == 'wowslider/'){
         $message = $location = '';
         $uploads = wp_upload_dir();
+        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
         $file = $uploads['path'] . '/' . basename(substr($source, 0, -10)) . '.zip';
+        @$wp_filesystem -> chmod($source, 0777, true);
+        $source = WP_CONTENT_DIR . '/' . substr($source, strlen($wp_filesystem -> wp_content_dir()));
         if (!is_dir($source . 'install/')){
             $location = admin_url('admin.php?page=wowslider-add-new&error=1&message=' . urlencode(__('Wrong slider.', 'wowslider')));
             $message = '<div id="message" class="error"><p>' . htmlspecialchars(__('Wrong slider.', 'wowslider')) . '</p></div>';

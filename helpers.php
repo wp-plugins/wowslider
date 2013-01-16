@@ -10,10 +10,44 @@ class WOWSlider_Helpers {
     }
     
     function filesystem_move($source, $destination, $overwrite = false){
-        if (!$overwrite && file_exists($destination))
+        if (!file_exists($source) || (!$overwrite && is_file($destination)))
             return false;
         if (@rename($source, $destination))
             return true;
+        if (is_dir($source)){
+            $dirs = $list = array();
+            $source = trailingslashit($source);
+            $destination = trailingslashit($destination);
+            $length = strlen($source);
+            $dirs[] = $source;
+            while ($dirs){
+                $dir = array_pop($dirs);
+                if ($dh = opendir($dir)){
+                    while (($item = readdir($dh)) !== false){
+                        if ($item{0} == '.') continue;
+                        else if (is_dir($dir . $item)){
+                            $list[] = substr($dir . $item . '/', $length);
+                            $dirs[] = $dir . $item . '/';
+                        } else $list[] = substr($dir . $item, $length);
+                    }
+                    closedir($dh);
+                }
+            }
+            sort($list);
+            if (!is_dir($destination)) @mkdir($destination);
+            foreach ($list as $item){
+                if (substr($item, -1) == '/'){
+                    if (!is_dir($destination . $item))
+                        @mkdir($destination . $item);
+                } else {
+                    if (!file_exists($destination . $item) || $overwrite)
+                        @copy($source . $item, $destination . $item);
+                    @unlink($source . $item);
+                }
+            }
+            WOWSlider_Helpers::filesystem_delete($source, true);
+            return true;
+        }
         if (WOWSlider_Helpers::filesystem_copy($source, $destination, $overwrite) && file_exists($destination)){
             WOWSlider_Helpers::filesystem_delete($source);
             return true;

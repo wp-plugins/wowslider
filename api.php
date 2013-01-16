@@ -8,6 +8,8 @@ function wowslider_upload_dir($k = 'path'){
             'url' => $upload_dir['baseurl'] . $dir,
             'path' => $upload_dir['basedir'] . $dir
         );
+        if (!is_dir($dir['path'])) @mkdir($dir['path']);
+        if (!is_dir($dir['path'] . 'import/')) @mkdir($dir['path'] . 'import/');
     }
     return $dir[$k];
 }
@@ -19,6 +21,7 @@ function wowslider_install($undo = false){
         $wpdb -> query("DROP TABLE $table;");
         require_once(ABSPATH . 'wp-admin/includes/file.php');
         WOWSlider_Helpers::filesystem_delete(wowslider_upload_dir(), true);
+        delete_option('wowslider_installed');
         delete_metadata('user', 0, 'wowslider_last_view', '', true);
         delete_metadata('user', 0, 'wp_wowslider_sliders_per_page', '', true);
         delete_metadata('user', 0, 'managewowslider_sliderscolumnshidden', '', true);
@@ -42,7 +45,10 @@ function wowslider_install($undo = false){
         ) $charset_collate;";
         require_once ABSPATH . 'wp-admin/includes/upgrade.php';
         dbDelta($queries);
-        if (is_dir(WOWSLIDER_PLUGIN_PATH . 'install/')) wowslider_add(WOWSLIDER_PLUGIN_PATH . 'install/');
+        if (!get_option('wowslider_installed') && is_dir(WOWSLIDER_PLUGIN_PATH . 'install/')){
+            add_option('wowslider_installed', 1);
+            wowslider_add(WOWSLIDER_PLUGIN_PATH . 'install/');
+        }
     }
     return true;
 }
@@ -99,9 +105,7 @@ function wowslider_import($zip_file = false, $update = 0, $delete = true){
     global $wp_filesystem;
     static $file = '';
     if ($zip_file === 'file') return $file;
-    define('FS_METHOD', 'direct');
-    WP_Filesystem();
-    $path = WOWSLIDER_PLUGIN_PATH . 'import/';
+    $path = wowslider_upload_dir() . 'import/';
     $status = true;
     if (!$zip_file){
         $list = WOWSlider_Helpers::filesystem_dirlist($path);
@@ -116,6 +120,8 @@ function wowslider_import($zip_file = false, $update = 0, $delete = true){
     }
     $path .= md5(microtime()) . '/';
     @mkdir($path);
+    add_filter('filesystem_method', create_function('', 'return "direct";'));
+    WP_Filesystem();
     $unzip = unzip_file($zip_file, $path);
     $install = $path . 'wowslider/install/';
     if ($delete) WOWSlider_Helpers::filesystem_delete($zip_file);

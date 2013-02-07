@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Calm Demo with Ken Burns effect](http://wowslider.com/html-slider-calm-kenburns-demo.html "HTML slider - Calm Template Demo with Ken Burns effect")
 *    [Dominion Demo with Blinds effect](http://wowslider.com/html-gallery-dominion-blinds-demo.html "HTML gallery - Dominion Template Demo with Blinds effect")
 *    [Silence Demo with Blur effect](http://wowslider.com/html-slideshow-silence-blur-demo.html "HTML slideshow - Silence Template Demo with Blur effect")
 *    [Prime Time - Filmstrip](http://wowslider.com/jquery-image-scroller-prime-time-linear-demo.html "jQuery Image Scroller - Prime Time Template Demo with Basic linear effect")
@@ -29,6 +30,8 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 *    [Quiet Demo - Rotate effect](http://www.wowslider.com/javascript-slideshow-quiet-rotate-demo.html "Javascript Slideshow - Quiet Template Demo with Rotate effect")
 *    [HTML5 Image Gallery - Numeric](view-source:http://wowslider.com/html5-image-gallery-numeric-basic-demo.html "HTML5 Image Gallery Numeric Basic Demo") 
 *    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Slider - Terse Blur")
+*    [Slider Demo - Mellow Blast Example](http://www.wowslider.com/jquery-slider-mellow-blast-demo.html "Slider Demo with Mellow template and Blast transition effect")
+
 
 More Info: http://wowslider.com/
 

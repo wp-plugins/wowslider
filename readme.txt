@@ -29,8 +29,9 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 *    [Dark Matter Demo](http://www.wowslider.com/free-image-slider-dark-matter-squares-demo.html "Free image slider - Dark Matter Demo with Squares effect")
 *    [Quiet Demo - Rotate effect](http://www.wowslider.com/javascript-slideshow-quiet-rotate-demo.html "Javascript Slideshow - Quiet Template Demo with Rotate effect")
 *    [HTML5 Image Gallery - Numeric](view-source:http://wowslider.com/html5-image-gallery-numeric-basic-demo.html "HTML5 Image Gallery Numeric Basic Demo") 
-*    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Slider - Terse Blur")
+*    [jQuery Image Rotator - Blur](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Image Rotator Terse Blur Demo : jQuery Banner Rotator")
 *    [Slider Demo - Mellow Blast Example](http://www.wowslider.com/jquery-slider-mellow-blast-demo.html "Slider Demo with Mellow template and Blast transition effect")
+*    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Slider - Terse Blur")
 
 
 More Info: http://wowslider.com/

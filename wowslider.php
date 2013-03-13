@@ -34,9 +34,10 @@ function wowslider_injection($output){
 define('WOWSLIDER_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WOWSLIDER_PLUGIN_PATH', str_replace('\\', '/', dirname(__FILE__)) . '/');
 add_filter('the_content', 'wowslider_injection');
-require_once WOWSLIDER_PLUGIN_PATH . 'admin-bar.php'; 
-require_once WOWSLIDER_PLUGIN_PATH . 'api.php'; 
-if (is_admin()) require_once WOWSLIDER_PLUGIN_PATH . 'admin.php'; 
+require_once WOWSLIDER_PLUGIN_PATH . 'admin-bar.php';
+require_once WOWSLIDER_PLUGIN_PATH . 'api.php';
+require_once WOWSLIDER_PLUGIN_PATH . 'helpers.php';
+if (is_admin()) require_once WOWSLIDER_PLUGIN_PATH . 'admin.php';
 
 wp_enqueue_script('jquery');
 if (file_exists(WOWSLIDER_PLUGIN_PATH . 'data/wowslider.js')){

@@ -184,7 +184,7 @@ function wowslider_add_new(){
     </object></div></p>
     <? else: ?>
     <h4><?php _e('Add a slider in .zip format from folder', 'wowslider') ?></h4>
-    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/plugins/wowslider/import/".</p>    
+    <p class="install-help"><?php echo str_replace('WOW Slider', '<a href="http://wowslider.com/" target="_blank">WOW Slider</a>', __('Create a slider with WOW Slider app and copy to folder:', 'wowslider')) ?> "./wp-content/uploads/wow-slider-plugin/import/".</p>    
     <br />
     <form method="post" action="<?php echo self_admin_url('admin.php?page=wowslider-add-new&tab=import&noheader=1') ?>">
 		<?php wp_nonce_field('wowslider-add-new') ?>
@@ -200,7 +200,10 @@ function wowslider_add_new_from_plugins($source){
     if (substr($source, -10) == 'wowslider/'){
         $message = $location = '';
         $uploads = wp_upload_dir();
+        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
         $file = $uploads['path'] . '/' . basename(substr($source, 0, -10)) . '.zip';
+        @$wp_filesystem -> chmod($source, 0777, true);
+        $source = WP_CONTENT_DIR . '/' . substr($source, strlen($wp_filesystem -> wp_content_dir()));
         if (!is_dir($source . 'install/')){
             $location = admin_url('admin.php?page=wowslider-add-new&error=1&message=' . urlencode(__('Wrong slider.', 'wowslider')));
             $message = '<div id="message" class="error"><p>' . htmlspecialchars(__('Wrong slider.', 'wowslider')) . '</p></div>';
@@ -211,12 +214,13 @@ function wowslider_add_new_from_plugins($source){
             $location = admin_url('admin.php?page=wowslider-add-new&message=&slider=' . wowslider_add());
             $message = '<div id="message" class="updated"><p>' . __('Slider added! To add it on the page use the shortcode:', 'wowslider') . ' <strong><code>[wowslider id="' . wowslider_add() . '"]</code></strong>. ' . str_replace('all sliders', '<a href="' . admin_url('admin.php?page=wowslider/admin.php') . '">all sliders</a>', __('See all sliders.', 'wowslider')) . '</p></div>';
         }
-        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
-        foreach (array('', 'data/') as $dir){
-            if ($list = $wp_filesystem -> dirlist($source . $dir)){
-                foreach ($list as $item){
-                    if ($item['type'] != 'f') continue;
-                    $wp_filesystem -> copy($source . $dir . $item['name'], WOWSLIDER_PLUGIN_PATH . $dir . $item['name'], true);
+        if (WOWSlider_Helpers::is_new_plugin($source . 'wowslider.php')){
+            foreach (array('', 'data/') as $dir){
+                if ($list = WOWSlider_Helpers::filesystem_dirlist($source . $dir)){
+                    foreach ($list as $item){
+                        if ($item['type'] != 'f') continue;
+                        WOWSlider_Helpers::filesystem_copy($source . $dir . $item['name'], WOWSLIDER_PLUGIN_PATH . $dir . $item['name'], true);
+                    }
                 }
             }
         }
@@ -243,16 +247,14 @@ function wowslider_add_new_from_plugins($source){
 }
 
 function wowslider_old_version(){
-    global $wp_filesystem;
     $dir = WOWSLIDER_PLUGIN_PATH . 'sliders/';
     if (is_dir($dir)){
         require_once(ABSPATH . 'wp-admin/includes/file.php');
-        if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();
-        if ($list = $wp_filesystem -> dirlist($dir)){
+        if ($list = WOWSlider_Helpers::filesystem_dirlist($dir)){
             foreach ($list as $item)
-                $wp_filesystem -> move($source . $dir . $item['name'], wowslider_upload_dir() . $item['name']);
+                WOWSlider_Helpers::filesystem_move($source . $dir . $item['name'], wowslider_upload_dir() . $item['name']);
         }
-        $wp_filesystem -> delete($dir, true);
+        WOWSlider_Helpers::filesystem_delete($dir, true);
     }
 }
 

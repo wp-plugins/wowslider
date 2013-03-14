@@ -170,10 +170,14 @@ function wowslider_get($q){
     global $wpdb;
     static $q_count = 0;
     $sliders = array();
-    if (is_integer($q)){
-        $id = $q;
+    if (is_integer($q) || (is_array($q) && isset($q['name']))){
+        $sort = '';
+        if (is_array($q)){
+            $sort = ' ORDER BY ID DESC';
+            $where = 'slider_name = "' . $wpdb -> escape($q['name']) . '"';
+        } else $where = 'ID = ' . $q;
         $only_public = func_num_args() > 1 ? func_get_arg(1) : true;
-        if ($wpdb -> get_var('SELECT ID FROM ' . $wpdb -> prefix . 'wowslider WHERE ID = ' . $id . ($only_public ? ' AND slider_public = 1' : '') . ' LIMIT 1;')){
+        if ($id = $wpdb -> get_var('SELECT ID FROM ' . $wpdb -> prefix . 'wowslider WHERE ' . $where . ($only_public ? ' AND slider_public = 1' : '') . $sort . ' LIMIT 1;')){
             $html = "\n\n<link rel='stylesheet' href='" . wowslider_upload_dir('url') . "$id/style.css' type='text/css' media='all' />\n" . str_replace('%URL%', wowslider_upload_dir('url') . "$id/", file_get_contents(wowslider_upload_dir() . $id . '/slider.html')) . "\n\n";
             if (file_exists(wowslider_upload_dir() . $id . '/script.js')) $html .= "<script type='text/javascript' src='" . wowslider_upload_dir('url') . "$id/script.js'></script>\n\n";
             return $html;

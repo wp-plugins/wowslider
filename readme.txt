@@ -43,6 +43,8 @@ More Info: http://wowslider.com/
 
 [youtube http://www.youtube.com/watch?v=o82IuhWtgTo]
 
+[How to update existing WOWSlider galleries in Wordpress - Video Tutorial](http://www.youtube.com/watch?v=0NCBHINEPvE "How to update existing WOWSlider galleries in Wordpress - Video Tutorial")
+
 == Installation ==
 
 Please see full tutorial+video here:

@@ -40,10 +40,9 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 More Info: http://wowslider.com/
 
 [How to create Wordpress slider with WOW Slider - Full Tutorial](view-source:http://wowslider.com/wordpress-jquery-slider.html "Wordpress Image Slider Plugin Tutorial")
+[How to update existing WOWSlider galleries in Wordpress - Video Tutorial](view-source:http://www.youtube.com/watch?v=0NCBHINEPvE "How to update existing WOWSlider galleries in Wordpress - Video Tutorial")
 
 [youtube http://www.youtube.com/watch?v=o82IuhWtgTo]
-
-[How to update existing WOWSlider galleries in Wordpress - Video Tutorial](http://www.youtube.com/watch?v=0NCBHINEPvE "How to update existing WOWSlider galleries in Wordpress - Video Tutorial")
 
 == Installation ==
 

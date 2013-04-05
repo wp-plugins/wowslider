@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 **Live Demos**:
 
 *    [Studio Demo with Fade effect](http://wowslider.com/css-slideshow-studio-fade.html "CSS Slideshow - Studio Template Demo with Fade effect")
+*    [Push Demo with Stack effect](http://wowslider.com/css-image-gallery-push-stack.html "CSS Image Gallery - Push Template Demo with Stack effect")
 *    [Balance Demo with Blast effect](http://wowslider.com/online-photo-slideshow-balance-blast.html "Online Photo Slideshow - Balance Template Demo with Blast effect")
 *    [Calm Demo with Ken Burns effect](http://wowslider.com/html-slider-calm-kenburns-demo.html "HTML slider - Calm Template Demo with Ken Burns effect")
 *    [Dominion Demo with Blinds effect](http://wowslider.com/html-gallery-dominion-blinds-demo.html "HTML gallery - Dominion Template Demo with Blinds effect")

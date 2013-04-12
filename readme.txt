@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Plastic Demo with Squares effect](http://wowslider.com/css-slideshow-plastic-squares.html "CSS Slideshow - Plastic Template Demo with Squares effect")
 *    [Studio Demo with Fade effect](http://wowslider.com/css-slideshow-studio-fade.html "CSS Slideshow - Studio Template Demo with Fade effect")
 *    [Push Demo with Stack effect](http://wowslider.com/css-image-gallery-push-stack.html "CSS Image Gallery - Push Template Demo with Stack effect")
 *    [Balance Demo with Blast effect](http://wowslider.com/online-photo-slideshow-balance-blast.html "Online Photo Slideshow - Balance Template Demo with Blast effect")

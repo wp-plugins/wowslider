@@ -25,6 +25,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 *    [Balance Demo with Blast effect](http://wowslider.com/online-photo-slideshow-balance-blast.html "Online Photo Slideshow - Balance Template Demo with Blast effect")
 *    [Cloud Demo with Fly effect](http://www.wowslider.com/photo-slider-cloud-fly.html "Photo Slider - Cloud Template Demo with Fly effect")
 *    [Drive Demo with Rotate effect](http://www.wowslider.com/online-photo-gallery-drive-rotate.html "Online Photo Gallery - Drive Template Demo with Rotate effect")
+*    [Subway Demo with Basic effect](http://wowslider.com/web-photo-gallery-subway-basic.html "Web Photo Gallery - Subway Template Demo with Basic effect")
 *    [Calm Demo with Ken Burns effect](http://wowslider.com/html-slider-calm-kenburns-demo.html "HTML slider - Calm Template Demo with Ken Burns effect")
 *    [Dominion Demo with Blinds effect](http://wowslider.com/html-gallery-dominion-blinds-demo.html "HTML gallery - Dominion Template Demo with Blinds effect")
 *    [Silence Demo with Blur effect](http://wowslider.com/html-slideshow-silence-blur-demo.html "HTML slideshow - Silence Template Demo with Blur effect")

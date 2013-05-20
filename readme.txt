@@ -39,6 +39,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 *    [HTML5 Image Gallery - Numeric](view-source:http://wowslider.com/html5-image-gallery-numeric-basic-demo.html "HTML5 Image Gallery Numeric Basic Demo") 
 *	 [CSS Slider - Aqua Flip](http://www.wowslider.com/css-slider-aqua-flip-demo.html "CSS Slider - Aqua Template with Flip effect")
 *    [jQuery Image Rotator - Blur](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Image Rotator Terse Blur Demo : jQuery Banner Rotator")
+*	 [Crystal Demo with Basic linear effect](http://www.wowslider.com/best-jquery-slider-crystal-linear-demo.html "Best jQuery Slider with Crystal Template and Basic linear transition effect") 
 *    [Slider Demo - Mellow Blast Example](http://www.wowslider.com/jquery-slider-mellow-blast-demo.html "Slider Demo with Mellow template and Blast transition effect")
 *    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Slider - Terse Blur")
 

@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Surface Demo with Blur effect](http://www.wowslider.com/slideshow-maker-software-surface-blur-demo.html "Slideshow Maker Software - Surface Template Demo with Blur effect")
 *    [Flat Demo with Slices effect](http://www.wowslider.com/jquery-slideshow-flat-slices.html "jQuery Slideshow - Flat Template Demo with Slices effect")
 *    [Plastic Demo with Squares effect](http://wowslider.com/css-slideshow-plastic-squares.html "CSS Slideshow - Plastic Template Demo with Squares effect")
 *    [Studio Demo with Fade effect](http://wowslider.com/css-slideshow-studio-fade.html "CSS Slideshow - Studio Template Demo with Fade effect")

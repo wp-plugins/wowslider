@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Elegant Demo with Basic linear effect](http://www.wowslider.com/slider-jquery-elegant-linear-demo.html "Slider jQuery - Elegant Template Demo with Basic linear effect")
 *    [Geometric Demo with Ken Burns effect](http://www.wowslider.com/banner-maker-geometric-kenburns-demo.html "Banner maker - Geometric Template Demo with Ken Burns effect")
 *    [Surface Demo with Blur effect](http://www.wowslider.com/slideshow-maker-software-surface-blur-demo.html "Slideshow Maker Software - Surface Template Demo with Blur effect")
 *    [Vernisage Demo with Stack Vertical effect](http://www.wowslider.com/jquery-carousel-vernisage-stack-v-demo.html "jQuery Carousel - Vernisage Template Demo with Stack vertical effect")

@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Chess Demo with Blinds effect](http://wowslider.com/responsive-slideshow-chess-blinds-demo.html "Responsive slideshow - Chess Template Demo with Blinds effect")
 *    [Gothic Demo with Domino effect](http://www.wowslider.com/css3-slider-gothic-domino-demo.html "CSS3 Slider - Gothic Template Demo with Domino effect")
 *    [Metro Demo with Rotate effect](http://wowslider.com/photo-slideshow-metro-rotate-demo.html "Photo slideshow - Metro Template Demo with Rotate effect")
 *    [Elegant Demo with Basic linear effect](http://www.wowslider.com/slider-jquery-elegant-linear-demo.html "Slider jQuery - Elegant Template Demo with Basic linear effect")

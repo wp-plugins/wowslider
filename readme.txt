@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Sunny Demo with Fade effect](http://www.wowslider.com/html5-slider-sunny-fade-demo.html "HTML5 Slider - Sunny Template Demo with Fade effect")
 *    [Premium Demo with Page effect](http://www.wowslider.com/js-image-slider-premium-page-demo.html "JS Image Slider - Premium Template Demo with Page effect")
 *    [Chess Demo with Blinds effect](http://wowslider.com/responsive-slideshow-chess-blinds-demo.html "Responsive slideshow - Chess Template Demo with Blinds effect")
 *    [Gothic Demo with Domino effect](http://www.wowslider.com/css3-slider-gothic-domino-demo.html "CSS3 Slider - Gothic Template Demo with Domino effect")

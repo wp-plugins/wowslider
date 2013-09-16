@@ -84,6 +84,10 @@ http://wowslider.com/wordpress-jquery-slider.html
 
 == Frequently Asked Questions ==
 
+= 1. Is it possible to make changes (add/delete images, change template or effect) directly in Wordpress? =
+
+No, it's impossible. You should make all changes in WOWSlider application and generate a new module.
+
 == Screenshots ==
 
 1. Fancy Templates

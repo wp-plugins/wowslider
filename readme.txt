@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Pure Demo with Domino effect](http://wowslider.com/css3-slideshow-pure-domino.html "CSS3 Slideshow - Pure Template Demo with Domino effect")
 *    [Fresh Demo with Cube effect](http://www.wowslider.com/3d-slider-jquery-fresh-cube-demo.html "3D Slider jQuery - Fresh Template Demo with Cube effect")
 *    [Ionosphere Demo with Stack effect](http://www.wowslider.com/javascript-slider-ionosphere-stack-demo.html "Javascript Slider - Ionosphere Template Demo with Stack effect")
 *    [Luxury Demo with Slices effect](http://www.wowslider.com/html5-slideshow-luxury-slices-demo.html "HTML5 Slideshow - Luxury Template Demo with Slices effect")

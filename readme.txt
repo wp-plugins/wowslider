@@ -93,7 +93,7 @@ No, it's impossible. You should make all changes in WOWSlider application and ge
 
 = 2. How can I remove your logo from the slideshow? =
 
-Notice, it's possible with purchased version only. In full registered version you should go to Gallery-&gtProperties-&gtImages, uncheck "Watermark" option and re-publish your slideshow.
+Notice, it's possible with purchased version only. In full registered version you should go to Gallery-&gt;Properties-&gt;Images, uncheck "Watermark" option and re-publish your slideshow.
 
 == Screenshots ==
 

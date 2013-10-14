@@ -91,6 +91,10 @@ http://wowslider.com/wordpress-jquery-slider.html
 
 No, it's impossible. You should make all changes in WOWSlider application and generate a new module.
 
+= 2. How can I remove your logo from the slideshow? =
+
+Notice, it's possible with purchased version only. In full registered version you should go to Gallery-&gtProperties-&gtImages, uncheck "Watermark" option and re-publish your slideshow.
+
 == Screenshots ==
 
 1. Fancy Templates

@@ -95,6 +95,24 @@ No, it's impossible. You should make all changes in WOWSlider application and ge
 
 Notice, it's possible with purchased version only. In full registered version you should go to Gallery-&gt;Properties-&gt;Images, uncheck "Watermark" option and re-publish your slideshow.
 
+= 3. Can I use the free version of WOW Slider on my website? =
+
+WOW Slider is free for non-commercial websites. But if your site generates any type of income, e.g. sells products, ads, services or just represents a commercial company, you should get a commercial license. Notice also, it's impossible to remove watermark from sliders generated with Free version.
+
+
+= 4. I've recently ordered WOWSlider. Now I want to add it in Wordpress header. How i can do this? =
+
+To insert WOWSlider into header you should use WOWSlider PHP code.
+
+Go to
+WOW Slider -> All Sliders
+
+and click on "Excerpt view" button at the top right corner. Additional line "for templates" with php code will appear under line with shortcode.
+You should add this php code into your header (Appearance->Editor->Header), for example:
+
+&lt;?php wowslider(1); ?&gt;
+  
+
 == Screenshots ==
 
 1. Fancy Templates

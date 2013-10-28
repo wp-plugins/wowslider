@@ -115,13 +115,14 @@ You should add this php code into your header (Appearance->Editor->Header), for 
 = 5. How to add WOWSlider in Wordpress widget? =
 
 You should install a special plugin that allows to add php code into text widget firstly. For example, "PHP Text Widget":
-[http://wordpress.org/plugins/php-text-widget/](http://wordpress.org/plugins/php-text-widget/ "PHP Text Widget")<br/>
+[http://wordpress.org/plugins/php-text-widget/](http://wordpress.org/plugins/php-text-widget/ "PHP Text Widget")
+
 After that go to
 WOW Slider -> All Sliders
 
 and click on "Excerpt view" button at the top right corner. Additional line "for templates" with php code will appear under line with shortcode.
 
-You should select simple text widget and add PHP code into it, for example:
+You should select a simple text widget and add PHP code into it, for example:
 
 &lt;?php wowslider(1); ?&gt; 
 

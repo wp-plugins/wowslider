@@ -3,7 +3,7 @@
 Plugin Name:  WOW Slider
 Description: This module easily adds image sliders created with WOWSlider app.
 Author: WOWSlider.com
-Version: 3.0
+Version: 4.0
 Author URI: http://wowslider.com/
 */
 
@@ -11,29 +11,22 @@ Author URI: http://wowslider.com/
 
 // template tag
 function wowslider($id = 0, $write = true){
-    static $active = array();
-    $id = (int)$id;
-    if (in_array($id, $active)) return '';
-    $active[] = $id; 
+    if (is_array($id)){ // shortcodes
+        $write = false;
+        if (isset($id['id'])) $id = (int)$id['id'];
+        else if (isset($id['title'])) $id = array('name' => $id['title']);
+        else return '';
+    } else if (substr($id, 0, 6) == 'title:') $id = array('name' => substr($id, 6));
+    else $id = (int)$id;
     $out = wowslider_get($id);
-    if ($write) echo $out;
-    else return $out;
-}
-
-// wowslider in pages/posts
-function wowslider_injection($output){
-    if (preg_match_all('/\[wowslider id="(\d+)"\]/', $output, $matches)){
-        $ids = array_unique($matches[1]);
-        foreach ($ids as $id)
-            $output = str_replace('[wowslider id="' . $id . '"]', wowslider($id, false), $output);
-    }
-    return $output;
+    if (!$write) return $out;
+    echo $out;
 }
 
 // initialization
 define('WOWSLIDER_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WOWSLIDER_PLUGIN_PATH', str_replace('\\', '/', dirname(__FILE__)) . '/');
-add_filter('the_content', 'wowslider_injection');
+add_shortcode('wowslider' , 'wowslider');
 require_once WOWSLIDER_PLUGIN_PATH . 'admin-bar.php';
 require_once WOWSLIDER_PLUGIN_PATH . 'api.php';
 require_once WOWSLIDER_PLUGIN_PATH . 'helpers.php';

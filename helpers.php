@@ -108,7 +108,7 @@ class WOWSlider_Helpers {
     }
     
     function is_new_plugin($file){
-        if (!file_exists($file)) return false;
+        if (!file_exists($file) || (is_multisite() && !is_super_admin())) return false;
         $current = get_file_data(WOWSLIDER_PLUGIN_PATH . 'wowslider.php', array('Version' => 'Version'), 'plugin');
         $new = get_file_data($file, array('Version' => 'Version'), 'plugin');
         return version_compare($new['Version'], $current['Version'], '>');

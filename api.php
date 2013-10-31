@@ -5,8 +5,9 @@ function wowslider_upload_dir($k = 'path'){
     if (is_string($dir)){
         $upload_dir = wp_upload_dir();
         $dir = array(
-            'url' => $upload_dir['baseurl'] . $dir,
-            'path' => $upload_dir['basedir'] . $dir
+            'url'  => $upload_dir['baseurl'] . $dir,
+            'path' => $upload_dir['basedir'] . $dir,
+            'base' => $dir
         );
         if (!is_dir($dir['path'])) @mkdir($dir['path']);
         if (!is_dir($dir['path'] . 'import/')) @mkdir($dir['path'] . 'import/');
@@ -15,12 +16,25 @@ function wowslider_upload_dir($k = 'path'){
 }
 
 function wowslider_install($undo = false){
-    global $wpdb;
-    $table = $wpdb -> prefix . 'wowslider';
-    if ($undo){
-        $wpdb -> query("DROP TABLE $table;");
+    global $wpdb, $wp_current_filter;
+    $tables = array($wpdb -> prefix . 'wowslider');
+    if (in_array('wpmu_new_blog', $wp_current_filter)){
+        $blog_id = func_get_arg(0);
+        $tables[0] = $wpdb -> get_blog_prefix($blog_id) . 'wowslider';
+    } else if (is_multisite() && ($blogs = $wpdb -> get_col('SELECT blog_id FROM ' . $wpdb -> blogs))){
+        foreach ($blogs as $blog_id)
+            $tables[] = $wpdb -> get_blog_prefix($blog_id) . 'wowslider';
+        $tables = array_unique($tables);
+    }
+    if ($undo === 'undo'){
+        foreach ($tables as $table)
+            $wpdb -> query("DROP TABLE $table;");
         require_once(ABSPATH . 'wp-admin/includes/file.php');
         WOWSlider_Helpers::filesystem_delete(wowslider_upload_dir(), true);
+        if (is_multisite() && $blogs){
+            foreach ($blogs as $blog_id)
+                WOWSlider_Helpers::filesystem_delete(WP_CONTENT_DIR . "/blogs.dir/$blog_id/files" . wowslider_upload_dir('base'), true);
+        }
         delete_option('wowslider_installed');
         delete_metadata('user', 0, 'wowslider_last_view', '', true);
         delete_metadata('user', 0, 'wp_wowslider_sliders_per_page', '', true);
@@ -29,7 +43,7 @@ function wowslider_install($undo = false){
         $charset_collate = '';
         if (!empty($wpdb -> charset)) $charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
         if (!empty($wpdb -> collate)) $charset_collate .= " COLLATE $wpdb->collate";
-        $queries = "CREATE TABLE $table (
+        $queries = "CREATE TABLE %s (
           ID bigint(20) unsigned NOT NULL auto_increment,
           slider_name varchar(200) NOT NULL,
           slider_author bigint(20) unsigned NOT NULL default '0',
@@ -44,7 +58,8 @@ function wowslider_install($undo = false){
           KEY slider_date (slider_date)
         ) $charset_collate;";
         require_once ABSPATH . 'wp-admin/includes/upgrade.php';
-        dbDelta($queries);
+        foreach ($tables as $table)
+            dbDelta(sprintf($queries, $table));
         if (!get_option('wowslider_installed') && is_dir(WOWSLIDER_PLUGIN_PATH . 'install/')){
             add_option('wowslider_installed', 1);
             wowslider_add(WOWSLIDER_PLUGIN_PATH . 'install/');
@@ -170,10 +185,14 @@ function wowslider_get($q){
     global $wpdb;
     static $q_count = 0;
     $sliders = array();
-    if (is_integer($q)){
-        $id = $q;
+    if (is_integer($q) || (is_array($q) && isset($q['name']))){
+        $sort = '';
+        if (is_array($q)){
+            $sort = ' ORDER BY ID DESC';
+            $where = 'slider_name = "' . $wpdb -> escape($q['name']) . '"';
+        } else $where = 'ID = ' . $q;
         $only_public = func_num_args() > 1 ? func_get_arg(1) : true;
-        if ($wpdb -> get_var('SELECT ID FROM ' . $wpdb -> prefix . 'wowslider WHERE ID = ' . $id . ($only_public ? ' AND slider_public = 1' : '') . ' LIMIT 1;')){
+        if ($id = $wpdb -> get_var('SELECT ID FROM ' . $wpdb -> prefix . 'wowslider WHERE ' . $where . ($only_public ? ' AND slider_public = 1' : '') . $sort . ' LIMIT 1;')){
             $html = "\n\n<link rel='stylesheet' href='" . wowslider_upload_dir('url') . "$id/style.css' type='text/css' media='all' />\n" . str_replace('%URL%', wowslider_upload_dir('url') . "$id/", file_get_contents(wowslider_upload_dir() . $id . '/slider.html')) . "\n\n";
             if (file_exists(wowslider_upload_dir() . $id . '/script.js')) $html .= "<script type='text/javascript' src='" . wowslider_upload_dir('url') . "$id/script.js'></script>\n\n";
             return $html;

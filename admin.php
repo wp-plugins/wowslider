@@ -258,15 +258,20 @@ function wowslider_old_version(){
     }
 }
 
+function wowslider_load_css() {
+    wp_register_style('wowslider-admin', WOWSLIDER_PLUGIN_URL . 'data/admin.css');
+    wp_enqueue_style('wowslider-admin');
+}
+
 register_activation_hook(WOWSLIDER_PLUGIN_PATH . 'wowslider.php', 'wowslider_install');
 add_action('init', 'wowslider_old_version'); // support old versions
 add_action('init', 'wowslider_tinymce_button');
 add_action('admin_menu', 'wowslider_admin_menu');
+add_action('wpmu_new_blog', 'wowslider_install');
+add_action('admin_enqueue_scripts', 'wowslider_load_css');
 add_filter('contextual_help', 'wowslider_help', 10, 3);
 add_filter('in_admin_header', 'wowslider_table_include');
 add_filter('load-toplevel_page_wowslider/admin', 'wowslider_set_screen_id');
 add_filter('upgrader_source_selection', 'wowslider_add_new_from_plugins');
-wp_register_style('wowslider-admin', WOWSLIDER_PLUGIN_URL . 'data/admin.css');
-wp_enqueue_style('wowslider-admin');
 
 ?>

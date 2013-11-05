@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Dot Demo with Seven effect](http://www.wowslider.com/jquery-gallery-dot-seven-demo.html "jQuery gallery - Dot Template Demo with Seven effect")
 *    [Book Demo with Book effect](http://wowslider.com/css3-image-slider-book-demo.html "CSS3 Image Slider - Book Template Demo with Book effect")
 *    [Box Demo with Stack Vertical effect](http://wowslider.com/html5-image-slider-box-stack-v-demo.html "HTML5 Image Slider - Box Template Demo with Stack Vertical effect")
 *    [Pure Demo with Domino effect](http://wowslider.com/css3-slideshow-pure-domino.html "CSS3 Slideshow - Pure Template Demo with Domino effect")
@@ -131,6 +132,11 @@ You should select a simple text widget and add PHP code into it, for example:
 You should select
 Appearance -> Editor
 and change "header.php" from templates in the right column. 
+
+= 7. What is difference between Free and Business versions of WOWSlider? =
+
+Free version can be used on personal, non-commercial sites only. Business version of WOWSlider has an option to remove watermark from images as well as set your own watermarks.
+All other features and options of Free and Business versions are the same. 
   
 
 == Screenshots ==

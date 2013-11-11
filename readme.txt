@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Salient Demo with Squares effect](http://wowslider.com/slideshow-jquery-salient-squares-demo.html "Slideshow jQuery - Salient Template Demo with Squares effect")
 *    [Dot Demo with Seven effect](http://www.wowslider.com/jquery-gallery-dot-seven-demo.html "jQuery gallery - Dot Template Demo with Seven effect")
 *    [Book Demo with Book effect](http://wowslider.com/css3-image-slider-book-demo.html "CSS3 Image Slider - Book Template Demo with Book effect")
 *    [Box Demo with Stack Vertical effect](http://wowslider.com/html5-image-slider-box-stack-v-demo.html "HTML5 Image Slider - Box Template Demo with Stack Vertical effect")
@@ -138,7 +139,12 @@ and change "header.php" from templates in the right column.
 Free version can be used on personal, non-commercial sites only. Business version of WOWSlider has an option to remove watermark from images as well as set your own watermarks.
 All other features and options of Free and Business versions are the same. 
   
+= 8. Drop down menus open behind WOWSlider =
 
+It seems "z-index" problem. WOWSlider's value of "z-index" parameter is 90. So, "z-index" value of your menu should be greater than 90.
+If problem will persist, please contact with customer support at support [at] wowslider [dot] com. Provide us a direct link to your webpage with a problem.
+ 
+  
 == Screenshots ==
 
 1. Fancy Templates

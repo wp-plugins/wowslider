@@ -80,9 +80,15 @@ function wowslider_add($folder = false, $update = 0, $delete = true){
         $images = array();
         $list = WOWSlider_Helpers::filesystem_dirlist($folder . (is_dir($folder . 'tooltips/') ? 'tooltips/' : 'images/'));
         foreach ($list as $name=>$v){
-            if ($v['type'] == 'f' && strtolower(substr($name, -4)) == '.jpg')
-                $images[] = $name;
-            if (count($images) == 10) break;
+            if ($v['type'] != 'f') continue;
+            switch (strtolower(substr($name, -4))){
+                case '.jpg':
+                case '.png':
+                    $images[] = $name;
+                    break;
+            }
+            if (count($images) == 10)
+                break;
         }
         if (count($images)){
             $name = '';

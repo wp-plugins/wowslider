@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Sky Demo with Blur effect](http://wowslider.com/wordpress-gallery-sky-blur-demo.html "Wordpress gallery - Sky Template Demo with Blur effect")
 *    [Salient Demo with Squares effect](http://wowslider.com/slideshow-jquery-salient-squares-demo.html "Slideshow jQuery - Salient Template Demo with Squares effect")
 *    [Dot Demo with Seven effect](http://www.wowslider.com/jquery-gallery-dot-seven-demo.html "jQuery gallery - Dot Template Demo with Seven effect")
 *    [Book Demo with Book effect](http://wowslider.com/css3-image-slider-book-demo.html "CSS3 Image Slider - Book Template Demo with Book effect")
@@ -143,6 +144,12 @@ All other features and options of Free and Business versions are the same.
 
 It seems "z-index" problem. WOWSlider's value of "z-index" parameter is 90. So, "z-index" value of your menu should be greater than 90.
 If problem will persist, please contact with customer support at support [at] wowslider [dot] com. Provide us a direct link to your webpage with a problem.
+
+= 9. WOWSlider doesn't degradate nicely to CSS-only slider =
+
+Notice, WOWSlider provides this feature since v.2.1. So, if you use an older version, it will not work.
+Also, degradation to CSS-slider will not work, if you use "On-demand image loading" option. This option means that the images will be loaded from the script.
+ 
  
   
 == Screenshots ==

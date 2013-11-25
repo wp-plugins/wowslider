@@ -150,6 +150,9 @@ If problem will persist, please contact with customer support at support [at] wo
 Notice, WOWSlider provides this feature since v.2.1. So, if you use an older version, it will not work.
 Also, degradation to CSS-slider will not work, if you use "On-demand image loading" option. This option means that the images will be loaded from the script.
  
+ = 10. I bought WOW Slider Unlimited Websites license. Could I use it as a part of my own template which will be sold? =
+
+You need Enterprise license in this case. With Enterprise license you can redistribute WOW Slider as a part of your applications or templates. Also the Enterprise license allows you to install the WOW Slider app on up to 10 computers. 
  
   
 == Screenshots ==

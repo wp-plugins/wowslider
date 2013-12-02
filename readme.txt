@@ -153,6 +153,12 @@ Also, degradation to CSS-slider will not work, if you use "On-demand image loadi
  = 10. I bought WOW Slider Unlimited Websites license. Could I use it as a part of my own template which will be sold? =
 
 You need Enterprise license in this case. With Enterprise license you can redistribute WOW Slider as a part of your applications or templates. Also the Enterprise license allows you to install the WOW Slider app on up to 10 computers. 
+
+= 11. What is difference between Single Website and Unlimited Websites licenses? =
+
+With Single site license you are able to install slideshows, generated with WOW Slider on any pages within your domain name.
+Unlimited Websites License allows you to install sliders on an unlimited number of your own or your clients sites.
+ 
  
   
 == Screenshots ==

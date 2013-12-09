@@ -96,12 +96,11 @@ No, it's impossible. You should make all changes in WOWSlider application and ge
 
 = 2. How can I remove your logo from the slideshow? =
 
-Notice, it's possible with purchased version only. In full registered version you should go to Gallery-&gt;Properties-&gt;Images, uncheck "Watermark" option and re-publish your slideshow.
+Notice, it's possible with purchased version only. In full registered version you should go to Gallery-&gt;Properties-&gt;Images, uncheck "Watermark" option and re-publish your slideshow. Please use orignal images without "WOWSlider.com" watermark.
 
 = 3. Can I use the free version of WOW Slider on my website? =
 
 WOW Slider is free for non-commercial websites. But if your site generates any type of income, e.g. sells products, ads, services or just represents a commercial company, you should get a commercial license. Notice also, it's impossible to remove watermark from sliders generated with Free version.
-
 
 = 4. I've recently ordered WOWSlider. Now I want to add it in Wordpress header. How i can do this? =
 
@@ -150,7 +149,7 @@ If problem will persist, please contact with customer support at support [at] wo
 Notice, WOWSlider provides this feature since v.2.1. So, if you use an older version, it will not work.
 Also, degradation to CSS-slider will not work, if you use "On-demand image loading" option. This option means that the images will be loaded from the script.
  
- = 10. I bought WOW Slider Unlimited Websites license. Could I use it as a part of my own template which will be sold? =
+= 10. I bought WOW Slider Unlimited Websites license. Could I use it as a part of my own template which will be sold? =
 
 You need Enterprise license in this case. With Enterprise license you can redistribute WOW Slider as a part of your applications or templates. Also the Enterprise license allows you to install the WOW Slider app on up to 10 computers. 
 
@@ -159,7 +158,9 @@ You need Enterprise license in this case. With Enterprise license you can redist
 With Single site license you are able to install slideshows, generated with WOW Slider on any pages within your domain name.
 Unlimited Websites License allows you to install sliders on an unlimited number of your own or your clients sites.
  
- 
+= 12. My slider always shows "Basic" transition effect though I selected another effect. Why does it happen and how can I fix it? = 
+
+It seems that your slider works in pure css mode. Make sure that javascript is enabled in your browser. If problem will persist, probably it caused by jquery conflict. So, please contact with Customer Support at support [at] wowslider [dot] com and provide us a direct link to your webpage with a problem.
   
 == Screenshots ==
 

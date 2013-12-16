@@ -161,6 +161,11 @@ Unlimited Websites License allows you to install sliders on an unlimited number 
 = 12. My slider always shows "Basic" transition effect though I selected another effect. Why does it happen and how can I fix it? = 
 
 It seems that your slider works in pure css mode. Make sure that javascript is enabled in your browser. If problem will persist, probably it caused by jquery conflict. So, please contact with Customer Support at support [at] wowslider [dot] com and provide us a direct link to your webpage with a problem.
+
+= 13. WOWSlider won't work in HTTPS site. Is it possible to fix it? =
+
+WOWSlider generates paths to files according to your WordPress settings. So, if your site is "https", all paths in HTML code should be "https" too. Please try to follow this instruction:
+[http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/](http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/ "HTTPS for Wordpress")
   
 == Screenshots ==
 

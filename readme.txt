@@ -166,6 +166,14 @@ It seems that your slider works in pure css mode. Make sure that javascript is e
 
 WOWSlider generates paths to files according to your WordPress settings. So, if your site is "https", all paths in HTML code should be "https" too. Please try to follow this instruction:
 [http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/](http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/ "HTTPS for Wordpress")
+
+= 14. I have just downloaded WOW Slider for Windows. It was installed fine, however it will not launch at all. =
+
+Try to do the following:
+
+Control panel -&gt; System -&gt; Advanced system settings -&gt; (Performance) Settings -&gt; Data Execution Prevention.
+
+Turn off DEP or add WOW Slider in the exception list.
   
 == Screenshots ==
 

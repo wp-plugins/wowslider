@@ -174,6 +174,10 @@ Try to do the following:
 Control panel -&gt; System -&gt; Advanced system settings -&gt; (Performance) Settings -&gt; Data Execution Prevention.
 
 Turn off DEP or add WOW Slider in the exception list.
+
+= 15. I haven't received a registration code after the purchase =
+
+The registration info is sent to your email instantly after the purchase is complete. In most cases this missing email can be found in your spam folder. If you still couldn't find your license info, please contact us at support [at] wowslider [dot] com with your order number. 
   
 == Screenshots ==
 

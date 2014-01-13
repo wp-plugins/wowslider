@@ -178,6 +178,10 @@ Turn off DEP or add WOW Slider in the exception list.
 = 15. I haven't received a registration code after the purchase =
 
 The registration info is sent to your email instantly after the purchase is complete. In most cases this missing email can be found in your spam folder. If you still couldn't find your license info, please contact us at support [at] wowslider [dot] com with your order number. 
+
+= 16. I have WOWSlider Single Website License. Is it possible to upgrade it to Unlimited Websites? =
+
+Yes, you can upgrade your license for a price difference. Please contact us at support [at] wowslider [dot] com or further instructions.
   
 == Screenshots ==
 

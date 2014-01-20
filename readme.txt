@@ -182,6 +182,15 @@ The registration info is sent to your email instantly after the purchase is comp
 = 16. I have WOWSlider Single Website License. Is it possible to upgrade it to Unlimited Websites? =
 
 Yes, you can upgrade your license for a price difference. Please contact us at support [at] wowslider [dot] com or further instructions.
+
+= 17. I want to add WOWSlider on the frontpage only and not on the other pages. Is it possible? =
+
+Yes, it's possible. To insert WOWSlider into frontpage only, you should add the following code in the "header.php" file:
+
+&lt;?php if (is_home() || is_front_page()) wowslider(ID); ?&gt; 
+
+(where ID is your slider identifier - number) in the place where you want to have a slider.
+
   
 == Screenshots ==
 

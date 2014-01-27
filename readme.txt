@@ -18,6 +18,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Zoom Demo with Domino effect](http://wowslider.com/slideshow-software-zoom-domino-demo.html "Slideshow software - Zoom Template Demo with Domino effect")
 *    [Sky Demo with Blur effect](http://wowslider.com/wordpress-gallery-sky-blur-demo.html "Wordpress gallery - Sky Template Demo with Blur effect")
 *    [Salient Demo with Squares effect](http://wowslider.com/slideshow-jquery-salient-squares-demo.html "Slideshow jQuery - Salient Template Demo with Squares effect")
 *    [Dot Demo with Seven effect](http://www.wowslider.com/jquery-gallery-dot-seven-demo.html "jQuery gallery - Dot Template Demo with Seven effect")

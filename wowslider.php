@@ -3,12 +3,9 @@
 Plugin Name:  WOW Slider
 Description: This module easily adds image sliders created with WOWSlider app.
 Author: WOWSlider.com
-Version: 4.1
+Version: 4.2
 Author URI: http://wowslider.com/
 */
-
-/* Copyright (C) 2013 WOWSlider.com. All rights reserved. */
-
 // template tag
 function wowslider($id = 0, $write = true){
     if (is_array($id)){ // shortcodes

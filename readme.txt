@@ -19,7 +19,8 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
-*    [Zoom   Domino ](http://wowslider.com/slideshow-software-zoom-domino-demo.html "Slideshow software - Zoom Template   Domino effect")
+*    [Shuffle & Rotate Slideshow HTML](http://wowslider.com/slideshow-html-shuffle-rotate-demo.html "Slideshow HTML - Shuffle Template  Rotate effect")
+*    [Zoom & Domino Slideshow software](http://wowslider.com/slideshow-software-zoom-domino-demo.html "Slideshow software - Zoom Template  Domino effect")
 *    [Sky & Blur Wordpress gallery ](http://wowslider.com/wordpress-gallery-sky-blur-demo.html "Wordpress gallery - Sky Template   Blur effect")
 *    [Salient & Squares Slideshow jQuery ](http://wowslider.com/slideshow-jquery-salient-squares-demo.html "Slideshow jQuery - Salient Template   Squares effect")
 *    [Dot & Seven jQuery gallery](http://www.wowslider.com/jquery-gallery-dot-seven-demo.html "jQuery gallery - Dot Template   Seven effect")

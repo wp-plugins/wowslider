@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Turquoise & Stack Vertical Slideshow creator](http://www.wowslider.com/slideshow-creator-turquoise-stack-v-demo.html "Slideshow creator - Turquoise Template Demo with Stack Vertical effect")
 *    [Simple & Basic Image gallery](http://www.wowslider.com/image-gallery-simple-basic-demo.html "Image gallery - Simple Template Demo with Basic effect")
 *    [Shuffle & Rotate Slideshow HTML](http://wowslider.com/slideshow-html-shuffle-rotate-demo.html "Slideshow HTML - Shuffle Template  Rotate effect")
 *    [Zoom & Domino Slideshow software](http://wowslider.com/slideshow-software-zoom-domino-demo.html "Slideshow software - Zoom Template  Domino effect")

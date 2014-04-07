@@ -19,7 +19,8 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
-*    [Emerald & Page Slider javascript](http://www.wowslider.com/slider-javascript-emerald-photo-demo.html "Slider javascript - Emerald Template Demo with Page effect")
+*    [Grafito & Seven Slider wordpress gallery plugin](http://wowslider.com/wordpress-gallery-plugin-grafito-seven-demo.html "Wordpress Gallery Plugin - Grafito Template Demo with Seven effect")
+*    [Emerald & Page Slider javascript](http://wowslider.com/slider-javascript-emerald-photo-demo.html "Slider javascript - Emerald Template Demo with Page effect")
 *    [Glass & Collage Responsive Image Gallery](http://www.wowslider.com/responsive-image-gallery-glass-collage.html "Responsive Image Gallery - Glass Template Demo with Collage effect")
 *    [Turquoise & Stack Vertical Slideshow creator](http://www.wowslider.com/slideshow-creator-turquoise-stack-v-demo.html "Slideshow creator - Turquoise Template Demo with Stack Vertical effect")
 *    [Simple & Basic Image gallery](http://www.wowslider.com/image-gallery-simple-basic-demo.html "Image gallery - Simple Template Demo with Basic effect")

@@ -24,6 +24,10 @@ body.wp-gte-3-5 #toplevel_page_wowslider-admin.wp-has-current-submenu .wp-menu-i
 body.wp-gte-3-5 #toplevel_page_wowslider-admin:hover .wp-menu-image img {
     background-position: 6px -62px;
 }
+body.branch-3-8 #toplevel_page_wowslider-admin .wp-menu-image img,
+#toplevel_page_wowslider-admin .dashicons-before img { display: none; }
+body.branch-3-8 #toplevel_page_wowslider-admin .wp-menu-image:before,
+#toplevel_page_wowslider-admin .dashicons-before:before { content: "\f180"; }
 
 /** icon (header) */
 #icon-wowslider {

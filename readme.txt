@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Tick & Book gallery](http://wowslider.com/gallery-jquery-tick-book-demo.html "Gallery jQuery - Tick Template Demo with Book effect")
 *    [Galaxy & Collage gallery](http://wowslider.com/css-gallery-galaxy-collage-demo.html "CSS Gallery - Galaxy Template Demo with Collage effect")
 *    [Strict & Photo gallery](http://wowslider.com/jquery-photo-gallery-strict-photo-demo.html "jQuery Photo Gallery - Strict Template Demo with Photo effect")
 *    [Grafito & Seven Slider wordpress gallery plugin](http://wowslider.com/wordpress-gallery-plugin-grafito-seven-demo.html "Wordpress Gallery Plugin - Grafito Template Demo with Seven effect")

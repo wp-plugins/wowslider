@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Easy & Page gallery](http://wowslider.com/slideshow-javascript-easy-page-demo.html "Slideshow javascript - Easy Template Demo with Page effect")
 *    [Tick & Book gallery](http://wowslider.com/gallery-jquery-tick-book-demo.html "Gallery jQuery - Tick Template Demo with Book effect")
 *    [Galaxy & Collage gallery](http://wowslider.com/css-gallery-galaxy-collage-demo.html "CSS Gallery - Galaxy Template Demo with Collage effect")
 *    [Strict & Photo gallery](http://wowslider.com/jquery-photo-gallery-strict-photo-demo.html "jQuery Photo Gallery - Strict Template Demo with Photo effect")

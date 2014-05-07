@@ -2,11 +2,12 @@
 
 function wowslider_admin_bar_menu(){
     global $wp_admin_bar;
-    if (is_super_admin() && is_admin_bar_showing()){
+    if (current_user_can('level_7') && is_admin_bar_showing()){
         $wp_admin_bar -> add_menu(array(
             'parent' => 'new-content',
             'title'  => __('Slider', 'wowslider'),
-            'href'   => admin_url('admin.php?page=wowslider-add-new')
+            'href'   => admin_url('admin.php?page=wowslider-add-new'),
+            'id'     => 'wowslider'
         ));
     }
 }

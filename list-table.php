@@ -9,14 +9,14 @@ class WOWSlider_List_Table extends WP_List_Table {
 
 	function __construct(){
 		global $status, $page, $s;
-		$default_status = get_user_option('wowslider_last_view');
-		if (empty($default_status)) $default_status = 'published';
-		$status = isset($_REQUEST['slider_status']) ? $_REQUEST['slider_status'] : $default_status;
+        $default_status = get_user_option('wowslider_last_view');
+        if (empty($default_status)) $default_status = 'published';
+        $status = isset($_REQUEST['slider_status']) ? $_REQUEST['slider_status'] : $default_status;
         if (!in_array($status, array('published', 'trash'))) $status = 'published';
         if ($status != $default_status) update_user_meta(get_current_user_id(), 'wowslider_last_view', $status);
         if (isset($_REQUEST['s'])) $_SERVER['REQUEST_URI'] = add_query_arg('s', stripslashes($_REQUEST['s']));
         $page = $this -> get_pagenum();
-		parent::__construct(array('plural' => 'wowslider'));
+        parent::__construct(array('plural' => 'wowslider', 'screen' => 'wowslider_sliders'));
 	}
 
     function get_table_classes(){
@@ -191,7 +191,7 @@ class WOWSlider_List_Table extends WP_List_Table {
 			if (in_array($column_name, $hidden)) $style = ' style="display:none;"';
 			switch ($column_name){
 				case 'cb':
-					echo '<th scope="row" class="check-column"><input type="checkbox" name="checked[]" value="' . esc_attr($id) . '" id="checkbox_' . $id . '" /><label class="screen-reader-text" for="checkbox_' . $id . '" >' . __('Select') . ' ' . htmlspecialchars($data['Name']) . '</label></th>';
+					echo '<th scope="row" class="check-column"><input type="checkbox" name="checked[]" value="' . esc_attr($id) . '" id="checkbox_' . $id . '" /><label class="screen-reader-text" for="checkbox_' . $id . '" >' . __('Select') . ' ' . htmlspecialchars($data['name']) . '</label></th>';
 					break;
 				case 'name':
 					echo '<td class="column-title"' . $style . '><strong>';
@@ -225,8 +225,8 @@ class WOWSlider_List_Table extends WP_List_Table {
                     if ($time_diff > 0 && $time_diff < 24*60*60) $h_time = sprintf(__('%s ago'), human_time_diff($time));
                     else $h_time = mysql2date(__( 'Y/m/d'), $m_time);
                     echo '<td class="column-date"' . $style . '>';
-                    if ('excerpt' == $mode) echo apply_filters('post_date_column_time', $t_time, $post, $column_name, $mode);
-                    else echo '<abbr title="' . $t_time . '">' . apply_filters('post_date_column_time', $h_time, $post, $column_name, $mode) . '</abbr>';
+                    if ('excerpt' == $mode) echo apply_filters('post_date_column_time', $t_time, null, $column_name, $mode);
+                    else echo '<abbr title="' . $t_time . '">' . apply_filters('post_date_column_time', $h_time, null, $column_name, $mode) . '</abbr>';
                     echo '</td>';
                 break; 
 				default:

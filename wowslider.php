@@ -3,7 +3,7 @@
 Plugin Name:  WOW Slider
 Description: This module easily adds image sliders created with WOWSlider app.
 Author: WOWSlider.com
-Version: 4.2
+Version: 4.3
 Author URI: http://wowslider.com/
 */
 // template tag
@@ -29,10 +29,12 @@ require_once WOWSLIDER_PLUGIN_PATH . 'api.php';
 require_once WOWSLIDER_PLUGIN_PATH . 'helpers.php';
 if (is_admin()) require_once WOWSLIDER_PLUGIN_PATH . 'admin.php';
 
-wp_enqueue_script('jquery');
-if (file_exists(WOWSLIDER_PLUGIN_PATH . 'data/wowslider.js')){
-	wp_register_script('wowslider', WOWSLIDER_PLUGIN_URL . 'data/wowslider.js', array('jquery'));
-	wp_enqueue_script('wowslider');
-}
+add_action('init', create_function('', '
+    wp_enqueue_script("jquery");
+    if (file_exists(WOWSLIDER_PLUGIN_PATH . "data/wowslider.js")){
+        wp_register_script("wowslider", WOWSLIDER_PLUGIN_URL . "data/wowslider.js", array("jquery"));
+        wp_enqueue_script("wowslider");
+    }
+'));
 
 ?>

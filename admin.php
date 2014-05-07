@@ -9,8 +9,8 @@ function wowslider_admin_menu(){
             $class .= "wp-gte-3-5";
         return $class;
     '));
-    add_menu_page('WOW Slider', 'WOW Slider', 7, $file, 'wowslider_sliders', WOWSLIDER_PLUGIN_URL . 'data/icon0.gif');
-    add_submenu_page($file, __('Add New Slider', 'wowslider'), __('Add New', 'wowslider'), 7, 'wowslider-add-new', 'wowslider_add_new');
+    add_menu_page('WOW Slider', 'WOW Slider', 'level_7', $file, 'wowslider_sliders', WOWSLIDER_PLUGIN_URL . 'data/icon0.gif');
+    add_submenu_page($file, __('Add New Slider', 'wowslider'), __('Add New', 'wowslider'), 'level_7', 'wowslider-add-new', 'wowslider_add_new');
     if (isset($submenu[$path][0][0])) $submenu[$path][0][0] = $submenu[$path][0][3] = __('All Sliders', 'wowslider');
 }
 
@@ -70,7 +70,7 @@ function wowslider_table_include(){
             update_user_option(get_current_user_id(), 'wowslider_sliders_per_page', max(1, min(100, (int)$_POST['wp_screen_options']['value'])));
         }
         $sliders_per_page = (int)get_user_option('wowslider_sliders_per_page');
-        add_filter('manage_wowslider_sliders_columns', array(WOWSlider_List_Table, 'get_columns'), 0);
+        add_filter('manage_wowslider_sliders_columns', array('WOWSlider_List_Table', 'get_columns'), 0);
         add_screen_option('per_page', array('label' => _x('Sliders', 'sliders per page (screen options)'), 'default' => ($sliders_per_page ? $sliders_per_page : 10), 'option' => 'edit_sliders_per_page'));
     }
 }

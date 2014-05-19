@@ -185,6 +185,10 @@ Yes, it's possible. To insert WOWSlider into frontpage only, you should add the 
 
 (where ID is your slider identifier - number) in the place where you want to have a slider.
 
+= 12. I plan to add 100+ images in my slideshow. Does WOWSlider allow it? Should all images be pre-loaded before slideshow will start the playing? =
+
+You should use "On-demand image loading" option in this case. Only first image should be pre-loaded and slideshow will start. All other images will be loaded during the playing.
+
   
 == Screenshots ==
 

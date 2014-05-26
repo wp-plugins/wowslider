@@ -189,6 +189,10 @@ Yes, it's possible. To insert WOWSlider into frontpage only, you should add the 
 
 You should use "On-demand image loading" option in this case. Only first image should be pre-loaded and slideshow will start. All other images will be loaded during the playing.
 
+= 13. I'd like to make the different pictures in my slider link to different pages. Is it possible?=
+
+It's possible to add individual link to each image.
+You should select image by clicking and specify link in "Url" field.
   
 == Screenshots ==
 

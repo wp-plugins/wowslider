@@ -192,6 +192,10 @@ You should use "On-demand image loading" option in this case. Only first image s
 = 13. I'd like to make the different pictures in my slider link to different pages. Is it possible? =
 
 It's possible to add individual link to each image. You should select image by clicking and specify link in "Url" field.
+
+= 14. Will WOWSlider play on iPhone/iPad/Android? =
+
+Yes, it'll. WOWSlider supports all modern devices. 
   
 == Screenshots ==
 

@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Javascript Gallery - Megalopolis Template](http://wowslider.com/javascript-gallery-megalopolis-slices-demo.html "Javascript Gallery - Megalopolis Template Demo with Slices effect")
 *    [Gentle & Basic linear simple jQuery slider](http://wowslider.com/simple-jquery-slider-gentle-linear-demo.html "Simple jQuery Slider - Gentle Template Demo with Basic linear effect")
 *    [Easy & Page gallery](http://wowslider.com/slideshow-javascript-easy-page-demo.html "Slideshow javascript - Easy Template Demo with Page effect")
 *    [Tick & Book gallery](http://wowslider.com/gallery-jquery-tick-book-demo.html "Gallery jQuery - Tick Template Demo with Book effect")

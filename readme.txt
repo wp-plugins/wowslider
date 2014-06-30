@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Contour Template Demo with Cube effect](http://wowslider.com/javascript-image-slider-contour-cube-demo.html "Javascript Image Slider - Contour Template Demo with Cube effect")
 *    [Puzzle Template Demo Collage effect](http://wowslider.com/html5-gallery-puzzle-collage-demo.html "HTML5 Gallery - Puzzle Template Demo with Collage effect")
 *    [Javascript Gallery - Megalopolis Template](http://wowslider.com/javascript-gallery-megalopolis-slices-demo.html "Javascript Gallery - Megalopolis Template Demo with Slices effect")
 *    [Gentle & Basic linear simple jQuery slider](http://wowslider.com/simple-jquery-slider-gentle-linear-demo.html "Simple jQuery Slider - Gentle Template Demo with Basic linear effect")

@@ -209,6 +209,11 @@ You can change other templates manually in generated "style.css" file. Open it i
 Yes, it's possible. You should go to
 Gallery->Properties->General
 and enable "Random order" option.
+
+= 16. I use "basic" transition effect. Can images go from last to first without "scrolling" back? =
+
+"Basic" transition effect can work in this way only. Please use "Basic linear" effect.
+
   
 == Screenshots ==
 

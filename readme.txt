@@ -214,7 +214,9 @@ and enable "Random order" option.
 
 "Basic" transition effect can work in this way only. Please use "Basic linear" effect.
 
-  
+= 17. Is there a way to add a video (iframe/pdf/page/etc.) in WOWSlider? =
+	
+ It's impossible. WOW Slider supports images only.
 == Screenshots ==
 
 1. Fancy Templates

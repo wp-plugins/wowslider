@@ -216,7 +216,9 @@ and enable "Random order" option.
 
 = 17. Is there a way to add a video (iframe/pdf/page/etc.) in WOWSlider? =
 	
- It's impossible. WOW Slider supports images only.
+ It's impossible in a current version. WOW Slider supports images only. Video will be supported in version 5.7
+
+
 == Screenshots ==
 
 1. Fancy Templates

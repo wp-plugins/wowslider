@@ -18,7 +18,6 @@ Responsive, fully accessible as a pure CSS slider if the Javascript is turned of
 all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
-*    [3D HTML5 Slider - Transparent Skin Slider Demo - Brick effect] (http://wowslider.com/jquery-3d-slider-transparent-brick-demo.html "3D HTML5 Slider - Transparent Skin Slider Demo - Brick effect")
 *    [Contour Template Demo with Cube effect](http://wowslider.com/javascript-image-slider-contour-cube-demo.html "Javascript Image Slider - Contour Template Demo with Cube effect")
 *    [Puzzle Template Demo Collage effect](http://wowslider.com/html5-gallery-puzzle-collage-demo.html "HTML5 Gallery - Puzzle Template Demo with Collage effect")
 *    [Javascript Gallery - Megalopolis Template](http://wowslider.com/javascript-gallery-megalopolis-slices-demo.html "Javascript Gallery - Megalopolis Template Demo with Slices effect")

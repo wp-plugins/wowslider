@@ -1,18 +1,17 @@
 === WOW Slider ===
-Contributors: WOWSlider
+Contributors: WOWSlider.com
 Donate link: http://wowslider.com/
-Tags: banner, css,  gallery,  image, image gallery, image slider, images, intro, javascript, jquery, jquery slider, nextgen, nivo, photo, photo gallery, photo slider, photos, picture, pictures, plugin, Post, responsive slider, rotator, shortcode, slider, slideshow, widget, wordpress, wordpress slider, wordpress gallery, wow slider, wowslider
-
+Tags: banner, gallery, image, image slider, images, javascript, jquery, photo, css, photos, picture, pictures, plugin, post, responsive slider, shortcode, posts, slider, slideshow, widget, wordpress, wordpress slider, wow slider, page, links
 Requires at least: 3.1
-Tested up to: 3.3
+Tested up to: 3.5
 Stable tag: trunk
+License: GPLv2
 
 Add beautiful image slider to your Wordpress blog! Awesome effects, fancy templates, point-and-click wizard. Fully responsive, pure CSS fallback.
 
 == Description ==
 
-WOW Slider is a Wordpress slider with stunning visual effects (Blast, Fly, Blinds, Squares, 
-Slices, Basic, Fade, Ken Burns, Stack, Rotate) and tons of professionally made templates. 
+[WOW Slider](http://wowslider.com/) is a Wordpress slider with stunning visual effects and tons of professionally made templates. 
 WOW Slider is packed with a point-and-click wizard to create fantastic image sliders in a matter of seconds without 
 coding and image editing. 
 Responsive, fully accessible as a pure CSS slider if the Javascript is turned off, touch swipe support, 
@@ -20,41 +19,92 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
-*	 [Jquery picture slider - Catalyst Digital Stack Demo](http://wowslider.com/jquery-picture-slider-catalyst-digital-stack-demo.html "Jquery picture slider - Catalyst Digital Template Demo with Stack effect")
-*	 [Jquery banner rotator - Catalyst Template Demo with Fade effect](http://wowslider.com/jquery-banner-rotator-catalyst-fade-demo.html "Jquery banner rotator - Catalyst Template Demo with Fade effect")
-*	 [Free image slider - Dark Matter Squares Demo](http://wowslider.com/free-image-slider-dark-matter-squares-demo.html "Free image slider - Dark Matter Demo with Squares effect")
-*	 [jQuery Image Scroller - Prime Time Basic linear Example](http://wowslider.com/jquery-image-scroller-prime-time-linear-demo.html "jQuery Image Scroller - Prime Time Template Demo with Basic linear effect")
+*    [3D HTML5 Slider - Transparent Skin Slider Demo - Brick effect](http://wowslider.com/jquery-3d-slider-transparent-brick-demo.html "3D HTML5 Slider - Transparent Skin Slider Demo - Brick effect")
+*    [Contour Template Demo with Cube effect](http://wowslider.com/javascript-image-slider-contour-cube-demo.html "Javascript Image Slider - Contour Template Demo with Cube effect")
+*    [Puzzle Template Demo Collage effect](http://wowslider.com/html5-gallery-puzzle-collage-demo.html "HTML5 Gallery - Puzzle Template Demo with Collage effect")
+*    [Javascript Gallery - Megalopolis Template](http://wowslider.com/javascript-gallery-megalopolis-slices-demo.html "Javascript Gallery - Megalopolis Template Demo with Slices effect")
+*    [Gentle & Basic linear simple jQuery slider](http://wowslider.com/simple-jquery-slider-gentle-linear-demo.html "Simple jQuery Slider - Gentle Template Demo with Basic linear effect")
+*    [Easy & Page gallery](http://wowslider.com/slideshow-javascript-easy-page-demo.html "Slideshow javascript - Easy Template Demo with Page effect")
+*    [Tick & Book gallery](http://wowslider.com/gallery-jquery-tick-book-demo.html "Gallery jQuery - Tick Template Demo with Book effect")
+*    [Galaxy & Collage gallery](http://wowslider.com/css-gallery-galaxy-collage-demo.html "CSS Gallery - Galaxy Template Demo with Collage effect")
+*    [Strict & Photo gallery](http://wowslider.com/jquery-photo-gallery-strict-photo-demo.html "jQuery Photo Gallery - Strict Template Demo with Photo effect")
+*    [Grafito & Seven Slider wordpress gallery plugin](http://wowslider.com/wordpress-gallery-plugin-grafito-seven-demo.html "Wordpress Gallery Plugin - Grafito Template Demo with Seven effect")
+*    [Emerald & Page Slider javascript](http://wowslider.com/slider-javascript-emerald-photo-demo.html "Slider javascript - Emerald Template Demo with Page effect")
+*    [Glass & Collage Responsive Image Gallery](http://www.wowslider.com/responsive-image-gallery-glass-collage.html "Responsive Image Gallery - Glass Template Demo with Collage effect")
+*    [Turquoise & Stack Vertical Slideshow creator](http://www.wowslider.com/slideshow-creator-turquoise-stack-v-demo.html "Slideshow creator - Turquoise Template Demo with Stack Vertical effect")
+*    [Simple & Basic Image gallery](http://www.wowslider.com/image-gallery-simple-basic-demo.html "Image gallery - Simple Template Demo with Basic effect")
+*    [Shuffle & Rotate Slideshow HTML](http://wowslider.com/slideshow-html-shuffle-rotate-demo.html "Slideshow HTML - Shuffle Template  Rotate effect")
+*    [Zoom & Domino Slideshow software](http://wowslider.com/slideshow-software-zoom-domino-demo.html "Slideshow software - Zoom Template  Domino effect")
+*    [Sky & Blur Wordpress gallery ](http://wowslider.com/wordpress-gallery-sky-blur-demo.html "Wordpress gallery - Sky Template   Blur effect")
+*    [Salient & Squares Slideshow jQuery ](http://wowslider.com/slideshow-jquery-salient-squares-demo.html "Slideshow jQuery - Salient Template   Squares effect")
+*    [Dot & Seven jQuery gallery](http://www.wowslider.com/jquery-gallery-dot-seven-demo.html "jQuery gallery - Dot Template   Seven effect")
+*    [Book CSS3 Image Slider](http://wowslider.com/css3-image-slider-book-demo.html "CSS3 Image Slider - Book Template   Book effect")
+*    [Box  Stack HTML5 Image Slider](http://wowslider.com/html5-image-slider-box-stack-v-demo.html "HTML5 Image Slider - Box Template   Stack Vertical effect")
+*    [Pure Domino CSS3 Slideshow](http://wowslider.com/css3-slideshow-pure-domino.html "CSS3 Slideshow - Pure Template   Domino effect")
+*    [Fresh Cube 3D Slider jQuery](http://www.wowslider.com/3d-slider-jquery-fresh-cube-demo.html "3D Slider jQuery - Fresh Template   Cube effect")
+*    [Ionosphere   Stack Javascript Slider](http://www.wowslider.com/javascript-slider-ionosphere-stack-demo.html "Javascript Slider - Ionosphere Template   Stack effect")
+*    [Luxury   Slices HTML5 Slideshow](http://www.wowslider.com/html5-slideshow-luxury-slices-demo.html "HTML5 Slideshow - Luxury Template   Slices effect")
+*    [Sunny   Fade HTML5 Slider](http://www.wowslider.com/html5-slider-sunny-fade-demo.html "HTML5 Slider - Sunny Template   Fade effect")
+*    [Premium   Page JS Image Slider](http://www.wowslider.com/js-image-slider-premium-page-demo.html "JS Image Slider - Premium Template   Page effect")
+*    [Chess   Blinds Responsive slideshow](http://wowslider.com/responsive-slideshow-chess-blinds-demo.html "Responsive slideshow - Chess Template   Blinds effect")
+*    [Gothic   Domino CSS3 Slider](http://www.wowslider.com/css3-slider-gothic-domino-demo.html "CSS3 Slider - Gothic Template   Domino effect")
+*    [Metro   Rotate Photo slideshow](http://wowslider.com/photo-slideshow-metro-rotate-demo.html "Photo slideshow - Metro Template   Rotate effect")
+*    [Elegant   Basic linear Slider jQuery ](http://www.wowslider.com/slider-jquery-elegant-linear-demo.html "Slider jQuery - Elegant Template   Basic linear effect")
+*    [Geometric   Ken Burns Banner maker](http://www.wowslider.com/banner-maker-geometric-kenburns-demo.html "Banner maker - Geometric Template   Ken Burns effect")
+*    [Surface   Blur Slideshow Maker Software](http://www.wowslider.com/slideshow-maker-software-surface-blur-demo.html "Slideshow Maker Software - Surface Template   Blur effect")
+*    [Vernisage   Stack Vertical jQuery Carousel ](http://www.wowslider.com/jquery-carousel-vernisage-stack-v-demo.html "jQuery Carousel - Vernisage Template   Stack vertical effect")
+*    [Plastic   Squares CSS Slideshow](http://wowslider.com/css-slideshow-plastic-squares.html "CSS Slideshow - Plastic Template   Squares effect")
+*    [Flat   Slices jQuery Slideshow](http://www.wowslider.com/jquery-slideshow-flat-slices.html "jQuery Slideshow - Flat Template   Slices effect")
+*    [Studio   Fade CSS Slideshow](http://wowslider.com/css-slideshow-studio-fade.html "CSS Slideshow - Studio Template   Fade effect")
+*    [Push   Stack CSS Image Gallery](http://wowslider.com/css-image-gallery-push-stack.html "CSS Image Gallery - Push Template   Stack effect")
+*    [Balance   Blast Online Photo Slideshow](http://wowslider.com/online-photo-slideshow-balance-blast.html "Online Photo Slideshow - Balance Template   Blast effect")
+*    [Cloud   Fly Photo Slider](http://www.wowslider.com/photo-slider-cloud-fly.html "Photo Slider - Cloud Template   Fly effect")
+*    [Drive   Rotate Online Photo Gallery](http://www.wowslider.com/online-photo-gallery-drive-rotate.html "Online Photo Gallery - Drive Template   Rotate effect")
+*    [Subway   Basic Web Photo Gallery](http://wowslider.com/web-photo-gallery-subway-basic.html "Web Photo Gallery - Subway Template   Basic effect")
+*    [Silence   Blur HTML slideshow](http://wowslider.com/html-slideshow-silence-blur-demo.html "HTML slideshow - Silence Template   Blur effect")
+*    [Dominion   Blinds HTML gallery](http://wowslider.com/html-gallery-dominion-blinds-demo.html "HTML gallery - Dominion Template   Blinds effect")
+*    [Calm   Ken Burns HTML slider](http://wowslider.com/html-slider-calm-kenburns-demo.html "HTML slider - Calm Template   Ken Burns effect")
+*    [Prime Time - Filmstrip jQuery Image Scroller](http://wowslider.com/jquery-image-scroller-prime-time-linear-demo.html "jQuery Image Scroller - Prime Time Template   Basic linear effect")
+*    [Dark Matter Free image slider](http://www.wowslider.com/free-image-slider-dark-matter-squares-demo.html "Free image slider - Dark Matter   Squares effect")
+*    [Catalyst Demo](http://wowslider.com/jquery-banner-rotator-catalyst-fade-demo.html "Jquery banner rotator - Catalyst Template   Fade effect") 
+*    [Catalyst Digital Jquery banner rotator](http://www.wowslider.com/jquery-picture-slider-catalyst-digital-stack-demo.html "jQuery Picture Slider - Catalyst Digital Template   Stack effect")
+*    [Quiet Demo - Rotate Javascript Slideshow ](http://www.wowslider.com/javascript-slideshow-quiet-rotate-demo.html "Javascript Slideshow - Quiet Template   Rotate effect")
+*    [Elemental Slices jQuery Slider CSS](view-source:http://wowslider.com/jquery-slider-css-elemental-slices-demo.html "jQuery Slider CSS Elemental Slices Demo") 
 *    [Responsive Slider - Shady Stack](view-source:http://wowslider.com/wordpress-gallery-css-shady-stack-v-demo.html "Responsive Slider - Wordpress Shady Stack Demo")
-*    [jQuery CSS Slider - Elemental Slices](view-source:http://wowslider.com/wordpress-gallery-css-shady-stack-v-demo.html "jQuery Slider CSS Elemental Slices Demo")
-*    [HTML5 Image Gallery - Numeric](view-source:http://wowslider.com/html5-image-gallery-numeric-basic-demo.html "HTML5 Image Gallery Numeric Basic Demo")
-*    [jQuery Image Rotator - Blur](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Image Rotator Terse Blur Demo : jQuery Banner Rotator")
-*    [Ken Burns Effect Slideshow - Crystal](view-source:http://wowslider.com/jquery-slider-bar-kenburns-demo.html "Ken Burns Effect Slideshow - Crystal")
-*	 [Javascript Slideshow - Quiet](http://www.wowslider.com/javascript-slideshow-quiet-rotate-demo.html "Javascript Slideshow - Quiet Template Demo with Rotate effect")
+*    [HTML5 Image Gallery - Numeric](view-source:http://wowslider.com/html5-image-gallery-numeric-basic-demo.html "HTML5 Image Gallery Numeric Basic Demo") 
 *	 [CSS Slider - Aqua Flip](http://www.wowslider.com/css-slider-aqua-flip-demo.html "CSS Slider - Aqua Template with Flip effect")
-*	 [Best jQuery Slider - Crystal Basic linear](http://www.wowslider.com/best-jquery-slider-crystal-linear-demo.html "Best jQuery Slider with Crystal Template and Basic linear transition effect")
-*	 [jQuery Slider Carousel - Mac Stack](http://www.wowslider.com/jquery-slider-carousel-mac-stack-demo.html "jQuery Slider Carousel with Mac template and Stack transition effect")
-*	 [jQuery Vertical Slider - Digit Stack vertical](http://www.wowslider.com/jquery-slider-3d-digit-stack-v-demo.html "jQuery Vertical Slider with Digit template and Stack vertical transition effect")
-*	 [Automatic jQuery Slider - jQuery Auto Slider Demo](http://www.wowslider.com/automatic-jquery-slider-noir-squares-demo.html "Automatic jQuery Slider with Noir template and Squares transition effect")
-*	 [Ajax Slider - Pulse Blinds Demo](http://www.wowslider.com/ajax-jquery-slider-pulse-blinds-demo.html "Ajax Slideshow with Pulse template and Blinds transition effect")
-*	 [jQuery HTML5 Slider - Crystal Basic Demo](http://wowslider.com/jquery-slider-crystal-basic-demo.html "jQuery HTML5 Slider with Crystal template and Basic transition effect")
-*	 [jQuery Div Slider - Flux Slices Demo](http://www.wowslider.com/jquery-slider-flux-slices-demo.html "jQuery Div Slider with Flux template and Slices transition effect")
-*	 [jQuery Banner Slider - Pinboard Fly Demo](http://www.wowslider.com/jquery-slider-pinboard-fly-demo.html "jQuery Banner Slider with Pinboard template and Fly transition effect")
-*	 [jQuery Slider Demo - Noble Fade Demo](http://www.wowslider.com/jquery-slider-noble-fade-demo.html "jQuery Slider Example with Noble template and Fade transition effect")
-*	 [Slider Demo - Mellow Blast Example](http://www.wowslider.com/jquery-slider-mellow-blast-demo.html "Slider Demo with Mellow template and Blast transition effect")
-*    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-slider-flux-slices-demo.html "jQuery Div Slider - Crystal Basic Demo")
+*    [jQuery Image Rotator - Blur](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Image Rotator Terse Blur Demo : jQuery Banner Rotator")
+*	 [Crystal jQuery Slider  Basic linear ](http://www.wowslider.com/best-jquery-slider-crystal-linear-demo.html "Best jQuery Slider with Crystal Template and Basic linear transition effect") 
+*	 [Mac   Stack jQuery Slider Carousel](http://wowslider.com/jquery-slider-carousel-mac-stack-demo.html "jQuery Slider Carousel with Mac Template and Stack transition effect") 
+*	 [Digit   Stack vertical jQuery Vertical Slider](http://www.wowslider.com/jquery-slider-3d-digit-stack-v-demo.html "jQuery Vertical Slider - Digit Stack vertical") 
+*	 [Noble   Ken Burns ](http://www.wowslider.com/jquery-slider-bar-kenburns-demo.html "Ken Burns Effect Slideshow - Noble") 
+*    [Slider Demo - Mellow Blast Example](http://www.wowslider.com/jquery-slider-mellow-blast-demo.html "Slider   Mellow template and Blast transition effect")
+*    [More amazing demos made with WOW Slider..](view-source:http://wowslider.com/jquery-image-rotator-terse-blur-demo.html "jQuery Slider - Terse Blur")
+
 
 More Info: http://wowslider.com/
 
-[How to create Wordpress slider with WOW Slider](view-source:http://wowslider.com/wordpress-jquery-slider.html "Wordpress Image Slider Plugin Tutorial")
+*    [How to create Wordpress slider with WOW Slider - Full Tutorial](view-source:http://wowslider.com/wordpress-jquery-slider.html "Wordpress Image Slider Plugin Tutorial")
+*    [How to update existing WOWSlider galleries in Wordpress - Video Tutorial](view-source:http://www.youtube.com/watch?v=0NCBHINEPvE "How to update existing WOWSlider galleries in Wordpress - Video Tutorial")
 
 [youtube http://www.youtube.com/watch?v=o82IuhWtgTo]
 
 
+== Credits ==
+
+Copyright:<br>
+WOWSlider.com 2014<br>
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
 == Installation ==
+
 Please see full tutorial+video here:
 http://wowslider.com/wordpress-jquery-slider.html
 
-1. Download WOWSlider app for Win or Mac from  
+1. Download WOWSlider Desktop application for Win or Mac from  
    http://wowslider.com/wowslider-free-setup.zip
 1. Create an image slideshow in WOW Slider program, click "Publish" button, and select "Wordpress Slider" as a publishing method - wowslider.zip WordPress plugin will be created
 1. Install and activate the created module – wowslider.zip through the 'Plugins' menu in WordPress
@@ -67,7 +117,11 @@ http://wowslider.com/wordpress-jquery-slider.html
 
 == Frequently Asked Questions ==
 
-= 1. I've recently ordered WOWSlider. Now I want to add it in Wordpress header. How i can do this? =
+= 1. Is it possible to make changes (add/delete images, change template or effect) directly in Wordpress? =
+
+No, it's impossible. You should make all changes in WOWSlider application and generate a new module.
+
+= 2. I've recently ordered WOWSlider. Now I want to add it in Wordpress header. How i can do this? =
 
 To insert WOWSlider into header you should use WOWSlider PHP code.
 
@@ -79,78 +133,46 @@ You should add this php code into your header (Appearance->Editor->Header), for 
 
 &lt;?php wowslider(1); ?&gt;
 
+= 3. How to add WOWSlider in Wordpress widget? =
 
-= 2. How can I change the DOCTYPE declaration for universal compatibility in Wordpres? =
+You should install a special plugin that allows to add php code into text widget firstly. For example, "PHP Text Widget":
+[http://wordpress.org/plugins/php-text-widget/](http://wordpress.org/plugins/php-text-widget/ "PHP Text Widget")
 
-You should select
-Appearance -> Editor
-and change "header.php" from templates in the right column.
-
-
-= 3. Drop down menus open behind WOWSlider =
-
-It seems "z-index" problem. "z-index" value of your menu should be greater than "z-index" value of WOWSlider.
-If problem will persist, please contact with customer support at support [at] wowslider [dot] com. Provide us a direct link to your webpage with a problem.
-
-= 4. Is it possible to make changes (add/delete images, change template or effect) directly in Wordpress? =
-
-No, it's impossible. You should make all changes in WOWSlider application and generate a new module.
-
-= 5. How to add WOWSlider in Wordpress widget? =
-
-You should install a special plugin that allows to add php code into text widget firstly. For example, "daikos-text-widget":
-[http://wordpress.org/extend/plugins/daikos-text-widget/](http://wordpress.org/extend/plugins/daikos-text-widget/ "daikos-text-widget")
 After that go to
 WOW Slider -> All Sliders
 
 and click on "Excerpt view" button at the top right corner. Additional line "for templates" with php code will appear under line with shortcode.
 
-You should add this php code into "daikos-text-widget", for example:
+You should select a simple text widget and add PHP code into it, for example:
 
-&lt;?php wowslider(1); ?&gt;
+&lt;?php wowslider(1); ?&gt; 
+
+= 4. How can I change the DOCTYPE declaration for universal compatibility in Wordpres? =
+
+You should select
+Appearance -> Editor
+and change "header.php" from templates in the right column. 
+
+= 5. Drop down menus open behind WOWSlider =
+
+It seems "z-index" problem. WOWSlider's value of "z-index" parameter is 90. So, "z-index" value of your menu should be greater than 90.
+If problem will persist, please contact with customer support at support [at] wowslider [dot] com. Provide us a direct link to your webpage with a problem.
 
 = 6. WOWSlider doesn't degradate nicely to CSS-only slider =
 
 Notice, WOWSlider provides this feature since v.2.1. So, if you use an older version, it will not work.
-Also, degradation to CSS-slider will not work, if you use "On-demand image loading" option. This option means that the images are loaded from script.
+Also, degradation to CSS-slider will not work, if you use "On-demand image loading" option. This option means that the images will be loaded from the script.
+ 
+= 8. My slider always shows "Basic" transition effect though I selected another effect. Why does it happen and how can I fix it? = 
 
-If problem will persist, please send generated module and project file (.wowsl) to Customer Support (at support [at] wowslider [dot] com), so we can check them. 
-Write us also what browser.
+It seems that your slider works in pure css mode. Make sure that javascript is enabled in your browser. If problem will persist, probably it caused by jquery conflict. So, please contact with Customer Support at support [at] wowslider [dot] com and provide us a direct link to your webpage with a problem.
 
-= 7. I see only shortcode [wowslider id="1"] instead of WOWSlider on my page =
+= 9. WOWSlider won't work in HTTPS site. Is it possible to fix it? =
 
-Notice, you need to add a shortcode on HTML tab in Wordpress, not on Visual tab. Please see a video tutorial on our website:
-[http://www.wowslider.com/wordpress-jquery-slider.html](http://www.wowslider.com/wordpress-jquery-slider.html "WOWSlider video tutorial")
+WOWSlider generates paths to files according to your WordPress settings. So, if your site is "https", all paths in HTML code should be "https" too. Please try to follow this instruction:
+[http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/](http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/ "HTTPS for Wordpress")
 
-= 8. I haven't received a registration code after the purchase =
-
-The registration info is sent to your email instantly after the purchase is complete. In most cases this missing email can be found in your spam folder. If you still couldn't find your license info, please contact us at support [at] wowslider [dot] com with your order number.
-
-= 9. Can I use the free version of WOW Slider on my website? =
-
-WOW Slider is free for non-commercial websites. But if your site generates any type of income, e.g. sells products, ads, services or just represents a commercial company, you should get a commercial license. 
-
-= 10. I have PC and MacBook. Do I need to get the licenses for both? =
-
-No, one license key of WOW Slider can be activated on maximum 2 computers. So, you can use the same license key on your Mac laptop and Windows desktop. 
-
-= 11. I get "Invalid key" error message when try to register. =
-
-Probably your antivirus/firewall/proxy doesn't allow Internet connection for WOW Slider or you have exceeded the maximum number of key activations. Please contact us at support [at] wowslider [dot] com for further instructions.
-
-= 12. I purchased a WOW Slider license. How can I remove your logo from the slideshow? =
-
-You should go to Gallery->Properties->Images and uncheck "Watermark" option and re-generate your slideshow.
-
-= 13. What is "auto-renewal" option at order page? Does this mean purchasing WOW Slider requires a yearly license renewal? =
-
-The WOW Slider Licenses include 1 year of free support and updates. If you select the "auto-renewal" option, your free support and update period will automatically renew at a discounted rate after a year. Leave the "auto-renewal" unchecked if you don't need it or plan to renew manually. 
-
-= 14. What will happen with sliders, which I have already added to my website when one year of free upgrades ends? Will they stop to work? =
-
-No, sliders and WOW Slider app will remain completely functional, but you’ll miss out on future product updates, and customer support.
-
-= 15. I have just downloaded WOW Slider for Windows. It was installed fine, however it will not launch at all. =
+= 10. I have just downloaded WOW Slider for Windows. It was installed fine, however it will not launch at all. =
 
 Try to do the following:
 
@@ -158,27 +180,45 @@ Control panel -&gt; System -&gt; Advanced system settings -&gt; (Performance) Se
 
 Turn off DEP or add WOW Slider in the exception list.
 
-= 16. I bought WOW Slider Unlimited Websites license. Could I use it as a part of my own template which will be sold? =
 
-You need Enterprise license in this case. With Enterprise license you can redistribute WOW Slider as a part of your applications or templates. Also the Enterprise license allows you to install the WOW Slider app on up to 10 computers. 
+= 11. I want to add WOWSlider on the frontpage only and not on the other pages. Is it possible? =
 
-= 17. We are non-profit organization. We want to have slides without your logo. How we can do it? =
+Yes, it's possible. To insert WOWSlider into frontpage only, you should add the following code in the "header.php" file:
 
-It's possible to remove our watermark with purchased version only. Please contact us at support [at] wowslider [dot] com for non-profit discount. 
+&lt;?php if (is_home() || is_front_page()) wowslider(ID); ?&gt; 
 
-= 18. What is difference between Free and Business versions of WOWSlider? =
+(where ID is your slider identifier - number) in the place where you want to have a slider.
 
-Free version can be used on personal, non-commercial sites only. Business version of WOWSlider has an option to remove watermark from images as well as set your own watermarks.
-All other features and options of Free and Business versions are the same. 
+= 12. I plan to add 100+ images in my slideshow. Does WOWSlider allow it? Should all images be pre-loaded before slideshow will start the playing? =
 
-= 19. What is difference between Single Website and Unlimited Websites licenses? =
+You should use "On-demand image loading" option in this case. Only first image should be pre-loaded and slideshow will start. All other images will be loaded during the playing.
 
-With Single site license you are able to install slideshows, generated with WOW Slider on any pages within your domain name.
-Unlimited Websites License allows you to install sliders on an unlimited number of your own or your clients sites.
+= 13. I'd like to make the different pictures in my slider link to different pages. Is it possible? =
 
-= 20. I have WOWSlider Single Website License. Is it possible to upgrade it to Unlimited Websites? =
+It's possible to add individual link to each image. You should select image by clicking and specify link in "Url" field.
 
-Yes, you can upgrade your license for a price difference. Please contact us at support [at] wowslider [dot] com or further instructions.. 
+= 14. Will WOWSlider play on iPhone/iPad/Android? =
+
+Yes, it'll. WOWSlider supports all modern devices. 
+
+= 15. I want my slideshow to begin from a random slide and play images in random order. Is it possible with WOWSlider? =
+
+Some of templates provide this feature already. For example: Prime Time, Calm, Shady, Noir, etc.
+
+You can change other templates manually in generated "style.css" file. Open it in any text editor (for example, Notepad), find following lines:
+
+Yes, it's possible. You should go to
+Gallery->Properties->General
+and enable "Random order" option.
+
+= 16. I use "basic" transition effect. Can images go from last to first without "scrolling" back? =
+
+"Basic" transition effect can work in this way only. Please use "Basic linear" effect.
+
+= 17. Is there a way to add a video (iframe/pdf/page/etc.) in WOWSlider? =
+	
+ It's impossible in a current version. WOW Slider supports images only. Video will be supported in version 5.7
+
 
 == Screenshots ==
 
@@ -191,50 +231,4 @@ Yes, you can upgrade your license for a price difference. Please contact us at s
 
 == Changelog ==
 
-= 2.5.3 =
-- Improved sample
-- Quite template and Rotate effect in sample
-
-= 2.5 =
-- New Quite template
-- New Rotate effect
-- Elastic Move description effect
-- Support for WOWSlider 2.5 app
-
-= 1.6.3 =
-- Updated sample for WOWSlider 2.3
-
-= 1.6.2 =
-- Fixed jquery loading problem
-- Fixed blast effect errors in IE7
-
-= 1.6.1 =
-- Support for WOWSlider 2.2
-
-= 1.6 =
-- Plugin will automatically update after adding a slider
-- Folder with sliders was moved to "Uploads"
-
-= 1.5.1 =
-- Fixed watermark problem
-
-= 1.5 =
-- Fixed title problem when image loading on-demand
-
-= 1.4 =
-- Fix bug with "On-demand image loading"
-
-= 1.3 =
-- Support for WOWSlider 2.1
-- Added fully accessible as a pure CSS slider, if the Javascript is turned off 
-- Added on-demand image loading
-- Added parameter to start from specified image or random image
-- Added parameter to run slideshow in specified or random order
-
-= 1.2 =
-- Support for Wordpress v3.3 
-- Fix bug in JavaScript
-
 == Upgrade Notice ==
-
- 

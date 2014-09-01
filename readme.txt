@@ -220,10 +220,9 @@ and enable "Random order" option.
 	
  It's impossible in a current version. WOW Slider supports images only. Video will be supported in version 5.7
 
-= 18. I want to buy full version of WOWSlider. Is there a way to prevent it from launching automatically until I launch it?
+= 18. I want to buy full version of WOWSlider. Is there a way to prevent it from launching automatically until I launch it?=
 
- If you do not want the slider to have an auto play feature, please, go to
-Slider->Properties->Generall. Uncheck "Auto play slide show" and "Auto play video" options.
+ If you do not want the slider to have an auto play feature, please, go to Slider->Properties->Generall. Uncheck "Auto play slide show" and "Auto play video" options.
 
 == Screenshots ==
 

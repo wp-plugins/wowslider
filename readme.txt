@@ -224,6 +224,10 @@ and enable "Random order" option.
 
  If you do not want the slider to have an auto play feature, please, go to Slider->Properties->Generall. Uncheck "Auto play slide show" and "Auto play video" options.
 
+= 19. Do you know how to change the size of your slideshow? Not the Resolution... =
+
+ You can change size of slideshow here:
+Slider-> Properties -> Design-> Slider size
 == Screenshots ==
 
 1. Fancy Templates

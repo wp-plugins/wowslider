@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 **Live Demos**:
 
+*    [Wordpress Slider - Twist Template Example - Glass Parallax effect](http://wowslider.com/slider-html-twist-glass-parallax-demo.html "Wordpress Slider - Twist Template Example with Glass Parallax effect")
 *    [Jquery Carousel - Animated Template Demo - Parallax effect](http://wowslider.com/jquery-carousel-animated-parallax-demo.html "Jquery Carousel - Animated Template Demo with Parallax effect")
 *    [3D HTML5 Slider - Transparent Skin Slider Demo - Brick effect](http://wowslider.com/jquery-3d-slider-transparent-brick-demo.html "3D HTML5 Slider - Transparent Skin Slider Demo - Brick effect")
 *    [Contour Template Demo with Cube effect](http://wowslider.com/javascript-image-slider-contour-cube-demo.html "Javascript Image Slider - Contour Template Demo with Cube effect")

@@ -232,6 +232,12 @@ and enable "Random order" option.
 
  You can change size of slideshow here:
 Slider-> Properties -> Design-> Slider size
+
+= 20. I don?t want to compress images, because I do it with Adobe PS.
+Can I stop the compressing or is the only possibility to overwrite ? =
+
+ Wowslider optimizes image files for web.
+ 
 == Screenshots ==
 
 1. Fancy Templates

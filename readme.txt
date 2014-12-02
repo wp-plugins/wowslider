@@ -16,7 +16,7 @@ WOW Slider is packed with a point-and-click wizard to create fantastic image sli
 coding and image editing. 
 Responsive, fully accessible as a pure CSS slider if the Javascript is turned off, touch swipe support, 
 all browsers, all devices,  search engine friendly, clean and valid markup.
-
+ 
 **Live Demos**:
 
 *    [Carousel Slider - Showy Template Demo - Carousel effect](http://wowslider.com/carousel-slider-showy-carousel-demo.html "Carousel Slider - Showy Template Demo with Carousel effect")

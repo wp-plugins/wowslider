@@ -124,7 +124,7 @@ http://wowslider.com/wordpress-jquery-slider.html
 
 = 1. Is it possible to make changes (add/delete images, change template or effect) directly in Wordpress? =
 
-No, it's impossible. You should make all changes in WOWSlider application and generate a new module.
+Sorry, it's impossible. You should make all changes in WOWSlider application and generate a new module.
 
 = 2. I've recently ordered WOWSlider. Now I want to add it in Wordpress header. How i can do this? =
 

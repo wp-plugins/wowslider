@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
  
 **Live Demos**:
 
+*    [Carousel Slider - Cursive Template Demo - Collage effect](http://wowslider.com/full-width-slider-cursive-collage-demo.html "Carousel Slider - Cursive Template Demo with Collage effect")	
 *    [Carousel Slider - Showy Template Demo - Carousel effect](http://wowslider.com/carousel-slider-showy-carousel-demo.html "Carousel Slider - Showy Template Demo with Carousel effect")
 *    [Javascript Carousel - Book Template Example - Dribbles effect](http://wowslider.com/image-carousel-book-dribbles-demo.html "Javascript Carousel - Book Template Example with Dribbles effect")
 *    [CSS Image Slider - Easy Template Example - Bubbles effect](http://wowslider.com/css3-slider-easy-bubbless-demo.html "CSS Image Slider - Easy Template Example with Bubbles effect")

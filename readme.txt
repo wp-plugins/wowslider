@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
  
 **Live Demos**:
 
+*    [HTML5 Slider - Bootstrap Template Example - Carousel effect](http://wowslider.com/bootstrap-carousel-demo.html "HTML5 Slider - Bootstrap Template Example with Carousel effect")	
 *    [JQuery Slider - Slim Template Example - Lines effect](http://wowslider.com/full-screen-slider-slim-lines-demo.html "JQuery Slider - Slim Template Example with Lines effect")	
 *    [Carousel Slider - Cursive Template Demo - Collage effect](http://wowslider.com/full-width-slider-cursive-collage-demo.html "Carousel Slider - Cursive Template Demo with Collage effect")	
 *    [Carousel Slider - Showy Template Demo - Carousel effect](http://wowslider.com/carousel-slider-showy-carousel-demo.html "Carousel Slider - Showy Template Demo with Carousel effect")

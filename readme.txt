@@ -19,6 +19,8 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
  
 **Live Demos**:
 
+
+*    [Bootstrap Slider - Bootstrap Template Demo - Basic Linear effect](http://wowslider.com/bootstrap-slider-baisc-linear-demo.html "Bootstrap Slider - Bootstrap Template Demo with Basic Linear effect")	
 *    [Wordpress Slider Plugin - Absent Template Example - Cube effect](http://wowslider.com/wordpress-slider-plugin-absent-cube-demo.html "Wordpress Slider Plugin - Absent Template Example with Cube effect")	
 *    [HTML5 Slider - Bootstrap Template Example - Carousel effect](http://wowslider.com/bootstrap-carousel-demo.html "HTML5 Slider - Bootstrap Template Example with Carousel effect")	
 *    [JQuery Slider - Slim Template Example - Lines effect](http://wowslider.com/full-screen-slider-slim-lines-demo.html "JQuery Slider - Slim Template Example with Lines effect")	

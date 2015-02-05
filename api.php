@@ -103,7 +103,7 @@ function wowslider_add($folder = false, $update = 0, $delete = true){
                 'slider_images'   => serialize($images)
             );
             if ($update) $insert['ID'] = $update;
-            foreach ($insert as $k=>$v) $insert[$k] = '"' . $wpdb -> escape($v) . '"';
+            foreach ($insert as $k=>$v) $insert[$k] = '"' . esc_sql($v) . '"';
             $wpdb -> query('INSERT INTO ' . $wpdb -> prefix . 'wowslider (' . implode(',', array_keys($insert)) . ') VALUES (' . implode(',', array_values($insert)) . ');');
             $id = $update ? (int)$update : (int)$wpdb -> get_var('SELECT LAST_INSERT_ID();');
             if ($id){
@@ -111,7 +111,7 @@ function wowslider_add($folder = false, $update = 0, $delete = true){
                 if (!is_dir(wowslider_upload_dir())) mkdir(wowslider_upload_dir());
                 if (is_dir($dest)) WOWSlider_Helpers::filesystem_delete($dest, true);
                 WOWSlider_Helpers::filesystem_move($folder, $dest);
-                if ($name == '') $wpdb -> query('UPDATE ' . $wpdb -> prefix . 'wowslider SET slider_name = "' . $wpdb -> escape('Slider ' . $id) . '" WHERE ID = ' . $id . ';');
+                if ($name == '') $wpdb -> query('UPDATE ' . $wpdb -> prefix . 'wowslider SET slider_name = "' . esc_sql('Slider ' . $id) . '" WHERE ID = ' . $id . ';');
                 file_put_contents($dest . 'slider.html', str_replace('%ID%', $id, file_get_contents($dest . 'slider.html')));
                 file_put_contents($dest . 'style.css', str_replace('%ID%', $id, file_get_contents($dest . 'style.css')));
                 if (file_exists($dest . 'script.js')) file_put_contents($dest . 'script.js', str_replace('%ID%', $id, file_get_contents($dest . 'script.js')));
@@ -195,7 +195,7 @@ function wowslider_get($q){
         $sort = '';
         if (is_array($q)){
             $sort = ' ORDER BY ID DESC';
-            $where = 'slider_name = "' . $wpdb -> escape($q['name']) . '"';
+            $where = 'slider_name = "' . esc_sql($q['name']) . '"';
         } else $where = 'ID = ' . $q;
         $only_public = func_num_args() > 1 ? func_get_arg(1) : true;
         if ($id = $wpdb -> get_var('SELECT ID FROM ' . $wpdb -> prefix . 'wowslider WHERE ' . $where . ($only_public ? ' AND slider_public = 1' : '') . $sort . ' LIMIT 1;')){
@@ -231,7 +231,7 @@ function wowslider_get($q){
         if (isset($q['year'])) $where[] = 'YEAR(slider_date) = ' . $q['year'];
         if (isset($q['search'])){
             $s = preg_split('/\s+/', $q['search']);
-            foreach ($s as $i=>$v) $s[$i] = 'slider_name LIKE "%' . $wpdb -> escape(like_escape($v)) . '%"';
+            foreach ($s as $i=>$v) $s[$i] = 'slider_name LIKE "%' . esc_sql(addcslashes($v, '_%\\')) . '%"';
             $where[] = '((' . implode(' AND ', $s) . ')';
             $where[ count($where) - 1 ] .= (preg_match('/^[0-9]+$/', $q['search']) ? ' OR ID = ' . (int)$q['search'] : '') . ')';
         }

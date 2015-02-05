@@ -216,9 +216,8 @@ function wowslider_get($q){
             if (!in_array($param, array('published', 'trash'))) $param = 'all';
             return $wpdb -> get_results('SELECT DISTINCT YEAR(slider_date) AS year, MONTH(slider_date) AS month FROM ' . $wpdb -> prefix . 'wowslider' . ($param != 'all' ? ' WHERE slider_public = ' . ($param == 'trash' ? 0 : 1) : '') . ' ORDER BY slider_date DESC', ARRAY_A);
         }
-    } else if (isset($q['last']) && ($results = $wpdb -> get_results('SELECT ID as id, slider_name as name FROM ' . $wpdb -> prefix . 'wowslider WHERE slider_public = 1 ORDER BY ID DESC LIMIT ' . (int)$q['last'] . ';', ARRAY_A))){
-        foreach ($results as $v)
-            $sliders[ $v['id'] ] = $v['name'];
+    } else if (isset($q['last'])){
+        $sliders = $wpdb -> get_results('SELECT ID as id, slider_name as name FROM ' . $wpdb -> prefix . 'wowslider WHERE slider_public = 1 ORDER BY ID DESC LIMIT ' . (int)$q['last'] . ';', ARRAY_A);
     } else {
         if (isset($q['limit'])) $limit = ' LIMIT ' . $q['limit'];
         else if (isset($q['page'])){

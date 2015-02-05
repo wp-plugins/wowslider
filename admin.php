@@ -197,7 +197,8 @@ function wowslider_add_new(){
 
 function wowslider_add_new_from_plugins($source){
     global $wp_filesystem;
-    if (substr($source, -10) == 'wowslider/'){
+    $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
+    if (substr($source, -10) == 'wowslider/' && !in_array($action, array('update-selected', 'upgrade-plugin'))){
         $message = $location = '';
         $uploads = wp_upload_dir();
         if (!$wp_filesystem || !is_object($wp_filesystem)) WP_Filesystem();

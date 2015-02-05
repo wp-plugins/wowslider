@@ -2,17 +2,17 @@
 (function(){
     tinymce.create('tinymce.plugins.wowslider', {
         init : function(ed, url){
-            for (var id in tinymce_wowslider.sliders){
-                tinymce_wowslider.last = id;
+            for (var i in tinymce_wowslider.sliders){
+                tinymce_wowslider.last = tinymce_wowslider.sliders[i].id;
                 break;
             }
             if (tinymce.majorVersion >= 4){
                 if (tinymce_wowslider.last){
                     var menu = [];
-                    for (var id in tinymce_wowslider.sliders){
+                    for (var i in tinymce_wowslider.sliders){
                         menu.push({
-                            text : tinymce_wowslider.sliders[id],
-                            data : id
+                            text : tinymce_wowslider.sliders[i].name,
+                            data : tinymce_wowslider.sliders[i].id
                         });
                     }
                     var insert = function(e){
@@ -45,10 +45,10 @@
                         onclick : tinymce_wowslider.insert
                     });
                     c.onRenderMenu.add(function(c, m){
-                        for (var id in tinymce_wowslider.sliders){
+                        for (var i in tinymce_wowslider.sliders){
                             m.add({
-                                v : id,
-                                title : tinymce_wowslider.sliders[id],
+                                v : tinymce_wowslider.sliders[i].id,
+                                title : tinymce_wowslider.sliders[i].name,
                                 onclick : tinymce_wowslider.insert
                             });
                         }

@@ -20,6 +20,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 **Live Demos**:
 
 
+*    [Jquery Image Slider - Fill Template Demo - Basic effect](http://wowslider.com/jquery-image-slider-fill-basic-demo.html "Jquery Image Slider - Fill Template Demo with Basic effect")	
 *    [Content Slider - Material Template Demo - Collage effect](http://wowslider.com/content-slider-material-collage-demo.html "Content Slider - Material Template Demo with Collage effect")	
 *    [Bootstrap Slider - Bootstrap Template Demo - Basic Linear effect](http://wowslider.com/bootstrap-slider-baisc-linear-demo.html "Bootstrap Slider - Bootstrap Template Demo with Basic Linear effect")	
 *    [Wordpress Slider Plugin - Absent Template Example - Cube effect](http://wowslider.com/wordpress-slider-plugin-absent-cube-demo.html "Wordpress Slider Plugin - Absent Template Example with Cube effect")	

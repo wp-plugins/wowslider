@@ -218,10 +218,6 @@ Yes, it'll. WOWSlider supports all modern devices.
 
 = 15. I want my slideshow to begin from a random slide and play images in random order. Is it possible with WOWSlider? =
 
-Some of templates provide this feature already. For example: Prime Time, Calm, Shady, Noir, etc.
-
-You can change other templates manually in generated "style.css" file. Open it in any text editor (for example, Notepad), find following lines:
-
 Yes, it's possible. You should go to
 Gallery->Properties->General
 and enable "Random order" option.

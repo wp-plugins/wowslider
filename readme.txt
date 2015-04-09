@@ -229,7 +229,7 @@ and enable "Random order" option.
 
 = 17. Is there a way to add a video (iframe/pdf/page/etc.) in WOWSlider? =
 	
- It's impossible in a current version. WOW Slider supports images only. Video will be supported in version 5.7
+ You can add a video from either YouTube or Vimeo. Ideally, these should be videos you have permission to use on your website! Click on 'Add images and videos' button, then select 'Add video from Youtube' or 'Add video from Vimeo'.
 
 = 18. I want to buy full version of WOWSlider. Is there a way to prevent it from launching automatically until I launch it? =
 

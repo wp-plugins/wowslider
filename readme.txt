@@ -99,16 +99,16 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 
 More Info: http://wowslider.com/
 
-*    [How to create Wordpress slider with WOW Slider - Full Tutorial](view-source:http://wowslider.com/wordpress-jquery-slider.html "Wordpress Image Slider Plugin Tutorial")
-*    [How to update existing WOWSlider galleries in Wordpress - Video Tutorial](view-source:http://www.youtube.com/watch?v=0NCBHINEPvE "How to update existing WOWSlider galleries in Wordpress - Video Tutorial")
+*    [How to create Wordpress slider with WOW Slider - Full Tutorial](view-source:http://wowslider.com/help/add-wowslider-wordpress-34.html "Wordpress Image Slider Plugin Tutorial")
+*    [How to update existing WOWSlider galleries in Wordpress - Tutorial](view-source:http://wowslider.com/help/new-slider-wordpress-42.html "How to update existing WOWSlider galleries in Wordpress - Video Tutorial")
 
-[youtube http://www.youtube.com/watch?v=o82IuhWtgTo]
+[youtube http://www.youtube.com/watch?v=Omi32W6QyY4]
 
 
 == Credits ==
 
 Copyright:<br>
-WOWSlider.com 2014<br>
+WOWSlider.com 2015<br>
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 

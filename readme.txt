@@ -20,6 +20,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 **Live Demos**:
 
 
+*    [Image Slider - Zippy Template Demo - Louvers effect](http://wowslider.com/image-slider-zippy-louvers-demo.html "Image Slider - Zippy Template Demo with Louvers effect")	
 *    [Carousel Bootstrap - Bootstrap Template Demo - TV effect](http://wowslider.com/carousel-bootstrap-tv-demo.html "Carousel Bootstrap - Bootstrap Template Demo with TV effect")	
 *    [Responsive Slider - Convex Template Demo - Basic effect](http://wowslider.com/responsive-slider-convex-basic-demo.html "Responsive Slider - Convex Template Demo with Basic effect")	
 *    [Jquery Image Slider - Fill Template Demo - Basic effect](http://wowslider.com/jquery-image-slider-fill-basic-demo.html "Jquery Image Slider - Fill Template Demo with Basic effect")	

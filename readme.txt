@@ -117,7 +117,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 == Installation ==
 
 Please see full tutorial+video here:
-http://wowslider.com/wordpress-jquery-slider.html
+http://wowslider.com/help/add-wowslider-wordpress-34.html
 
 1. Download WOWSlider Desktop application for Win or Mac from  
    http://wowslider.com/wowslider-free-setup.zip
@@ -128,7 +128,7 @@ http://wowslider.com/wordpress-jquery-slider.html
 1. Preview changes 
 1. Use WOW Slider menu WOW Slider -> Add New to add each next slider
 
-[youtube http://www.youtube.com/watch?v=o82IuhWtgTo]
+[youtube http://www.youtube.com/watch?v=Omi32W6QyY4]
 
 == Frequently Asked Questions ==
 

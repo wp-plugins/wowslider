@@ -20,6 +20,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
 **Live Demos**:
 
 
+*    [Carousel Jquery - Boundary Template Demo - Blur effect](http://wowslider.com/carousel-jquery-boundary-blur-demo.html "Carousel Jquery - Boundary Template Demo with Blur effect")	
 *    [Wordpress Slider - Rhomb Template Demo - Cube Over effect](http://wowslider.com/wordpress-slider-rhomb-cube-over-demo.html "Wordpress Slider - Rhomb Template Demo with Cube Over effect")	
 *    [Image Slider - Zippy Template Demo - Louvers effect](http://wowslider.com/image-slider-zippy-louvers-demo.html "Image Slider - Zippy Template Demo with Louvers effect")	
 *    [Carousel Bootstrap - Bootstrap Template Demo - TV effect](http://wowslider.com/carousel-bootstrap-tv-demo.html "Carousel Bootstrap - Bootstrap Template Demo with TV effect")	

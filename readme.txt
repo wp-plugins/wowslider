@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
  
 **Live Demos**:
 
+*    [Jquery Content Slider - Stream Template Demo - Fly effect](http://wowslider.com/jquery-content-slider-stream-fly-demo.html "Jquery Content Slider - Stream Template Demo with Fly effect")	
 *    [Jquery Image Gallery - Dodgy Template Demo - Carousel Basic effect](http://wowslider.com/carousel-jquery-boundary-blur-demo.html "Jquery Image Gallery - Dodgy Template Demo with Carousel Basic effect")	
 *    [Carousel Jquery - Boundary Template Demo - Blur effect](http://wowslider.com/carousel-jquery-boundary-blur-demo.html "Carousel Jquery - Boundary Template Demo with Blur effect")	
 *    [Wordpress Slider - Rhomb Template Demo - Cube Over effect](http://wowslider.com/wordpress-slider-rhomb-cube-over-demo.html "Wordpress Slider - Rhomb Template Demo with Cube Over effect")	

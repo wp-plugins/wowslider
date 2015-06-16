@@ -19,7 +19,7 @@ function wowslider($id = 0, $write = true){
     if (!$write) return $out;
     echo $out;
 }
-
+ 
 // initialization
 define('WOWSLIDER_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WOWSLIDER_PLUGIN_PATH', str_replace('\\', '/', dirname(__FILE__)) . '/');

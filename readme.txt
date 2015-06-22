@@ -19,6 +19,7 @@ all browsers, all devices,  search engine friendly, clean and valid markup.
  
 **Live Demos**:
 
+*    [Angular Slider - Angular Template Demo - Collage effect](http://wowslider.com/angular-slider-collage-demo.html "Angular Slider - Angular Template Demo with Collage effect")	
 *    [Bootstrap Carousel Example - Bootstrap Shift Demo - Blinds effect](http://wowslider.com/bootstrap-carousel-example-shift-demo.html "Bootstrap Carousel Example - Bootstrap Template Demo with Shift effect")	
 *    [Slider Js - Utter Template Demo - Blinds effect](http://wowslider.com/slider-js-utter-blinds-demo.html "Slider Js - Utter Template Demo with Blinds effect")	
 *    [Jquery Content Slider - Stream Template Demo - Fly effect](http://wowslider.com/jquery-content-slider-stream-fly-demo.html "Jquery Content Slider - Stream Template Demo with Fly effect")	

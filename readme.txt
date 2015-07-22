@@ -10,7 +10,7 @@ License: GPLv2
 Add beautiful image slider to your Wordpress blog! Awesome effects, fancy templates, point-and-click wizard. Fully responsive, pure CSS fallback.
 
 == Description ==
-
+ 
 [WOW Slider](http://wowslider.com/) is a Wordpress slider with stunning visual effects and tons of professionally made templates. 
 WOW Slider is packed with a point-and-click wizard to create fantastic image sliders in a matter of seconds without 
 coding and image editing. 
